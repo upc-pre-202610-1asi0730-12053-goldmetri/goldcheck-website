@@ -1,95 +1,189 @@
 {
     "headers": {
-        "title": "GOLDMETRICS - The Ultimate Vehicle Tracking Solution",
-        "description": "GOLDMETRICS is a cutting-edge vehicle tracking system designed to provide real-time location monitoring, advanced security features, and seamless integration for both personal and commercial use.",
-        "home": "Home",
-        "about": "About Us",
-        "how": "How does it work?",
-        "faq": "FAQs",
-        "contact": "Contact"
+        "title": "GOLDMETRICS - La solución definitiva para el seguimiento de minerales",
+        "description": "GOLDMETRICS es un sistema de seguimiento de minerales de última generación diseñado para ofrecer supervisión de la ubicación en tiempo real, funciones de logística avanzadas y una integración perfecta, tanto para uso personal como comercial.",
+        "home": "Inicio",
+        "about": "Quiénes somos",
+        "how": "¿Cómo funciona?",
+        "pricing": "Planes",
+        "faq": "Preguntas frecuentes",
+        "contact": "Contacto"
     },
     "cta":{
-        "login": "Login",
-        "signup": "Sign Up"
+        "login": "Iniciar sesión",
+        "signup": "Registrarse" 
     },
     "heroSection": {
-        "tagline": "PREVENT | PROTECT | OPTIMIZE",
-        "slogan": "The new era of intelligent vehicule security and management with God's Tracker.",
-        "cta": "Get Started"
+        "tagline": "PREVENIR | PROTEGER | OPTIMIZAR",
+        "slogan": "La nueva era de la seguridad y la gestión de minerales inteligentes con GoldCheck.",
+        "cta": "Empieza ya"
     },
     "mission": {
-        "title": "Mission",
-        "content": "Our mission is to transform vehicle safety through an intelligent monitoring system and advanced telemetry, allowing our target segments to regain absolute control of their units in real time. We are committed to protecting the assets of our users and enhancing the profitability of their assets, eliminating uncertainty through immediate responses and personalized analytics that turn each vehicle into a protected and efficient entity."
+        "title": "Misión",
+        "content": "Nuestra misión es desarrollar tecnologías de vanguardia que permitan rastrear, examinar y validar el trayecto de los minerales, asegurando la autenticidad de los productos y promoviendo activamente la responsabilidad social en la industria."
     },
     "vision": {
-        "title": "Vision",
-        "content": "Our vision is to consolidate ourselves as the leading platform in vehicle security and intelligent asset management through telemetry and IoT, raising the standard of protection against technical crime. Likewise, we aspire for each vehicle connected to GuardiAnts to operate as an intelligent and autonomous system capable of anticipating risks, detecting interference, activating safeguard protocols and keeping the owner or administrator always in control from anywhere. With our product we seek to build a reliable, secure and highly available ecosystem that not only increases recovery and theft prevention, but also drives more efficient and profitable mobility for people and companies by converting data into fast, clear and actionable decisions in real time."
+        "title": "Visión",
+        "content": "Nuestra visión es consolidarnos como la empresa líder en trazabilidad minera en América Latina, conectando a toda la cadena de valor: desde la mina hasta el consumidor; con información confiable, inmutable y verificable."
     },
     "benefits": {
-        "title": "Benefits",
-        "benefit1": "Manage your fleet with ease: GUARDIANTS provides a user-friendly interface that allows you to monitor and manage your vehicles effortlessly, saving you time and resources.",
-        "benefit2": "Enhanced Security: GUARDIANTS offers advanced security features to protect your vehicles from theft and unauthorized use.",
-        "benefit3": "Real-time Insights: Get instant access to critical vehicle data, enabling informed decision-making and proactive management.",
-        "benefit4": "Cost Efficiency: Reduce operational costs through improved fleet management and optimized resource allocation.",
-        "benefit5": "Compliance Assurance: Ensure adherence to industry regulations with comprehensive reporting and documentation capabilities.",
-        "benefit6": "User-Friendly Experience: Enjoy a seamless experience with our intuitive platform designed for ease of use."
+        "title": "Ventajas",
+        "benefit1": "Gestiona tu flota con facilidad: GoldCheck ofrece una interfaz intuitiva que te permite supervisar y gestionar los minerales sin esfuerzo, ahorrándote tiempo y recursos.",
+        "benefit2": "Mayor seguridad: GoldCheck ofrece funciones de seguridad avanzadas para proteger los vehículos de transporte contra usos no autorizados.",
+        "benefit3": "Información en tiempo real: Accede al instante a datos esenciales sobre la ruta de los minerales, lo que te permite tomar decisiones fundamentadas y llevar a cabo una gestión proactiva.",
+        "benefit4": "Rentabilidad: Reduzca los costes operativos mediante una mejor gestión de la flota y una asignación optimizada de los recursos.",
+        "benefit5": "Garantía de cumplimiento: Asegura el cumplimiento de la normativa del sector gracias a unas completas funciones de generación de informes y documentación.",
+        "benefit6": "Experiencia intuitiva: disfruta de una experiencia fluida con nuestra plataforma intuitiva, diseñada para facilitar su uso."
     },
     "telemetrySection":{
-        "title": "Where Telemetry and Security Meets",
-        "content": "GUARDIANTS ofrece una plataforma de telemetría avanzada que proporciona monitoreo en tiempo real de la ubicación, velocidad, estado del vehículo y otros datos críticos. Nuestra tecnología de vanguardia permite a los usuarios acceder a información detallada sobre sus vehículos desde cualquier lugar, brindando una visión completa para una gestión eficiente y segura.",
-        "bullet1": "Controller Area Network (CAN) Integration: GUARDIANTS seamlessly integrates with your vehicle's CAN bus, allowing for comprehensive data collection and monitoring of various parameters such as engine performance, fuel levels, and more.",
-        "bullet2": "Geographic Information System (GIS) Mapping: Our platform utilizes GIS mapping technology to provide real-time location tracking and geofencing capabilities, ensuring you always know where your vehicles are and can set up virtual boundaries for added security.",
-        "bullet3": "Custom Alerts and Notifications: GUARDIANTS allows you to set up custom alerts and notifications based on specific events or conditions, such as unauthorized movement, speeding, or maintenance reminders, keeping you informed and in control at all times. Give permissions and keep a track of route patterns."
+        "title": "Donde se unen la telemetría y la seguridad",
+        "content": "GoldCheck ofrece una plataforma de telemetría avanzada que permite supervisar en tiempo real la ubicación, la velocidad, el estado del vehículo y otros datos fundamentales. Nuestra tecnología de vanguardia permite a los usuarios acceder a información detallada sobre los productos que utilizan minerales y su origen, lo que les proporciona una visión general completa para tomar decisiones eficientes y éticas.",
+        "bullet1": "Integración con la red de área de controladores (CAN): GoldCheck se integra a la perfección con el bus CAN del vehículo de transporte, lo que permite una recopilación exhaustiva de datos y la supervisión de diversos parámetros, como el rendimiento del motor, los niveles de combustible y mucho más.",
+        "bullet2": "Cartografía con Sistemas de Información Geográfica (SIG): Nuestra plataforma utiliza tecnología de cartografía SIG para ofrecer funciones de seguimiento de la ubicación en tiempo real y de geovallas, lo que garantiza que siempre sepa dónde se encuentran los vehiculos de transporte para monitorear el ciclo de transporte.",
+        "bullet3": "Alertas y notificaciones personalizadas: GoldCheck te permite configurar alertas y notificaciones personalizadas basadas en eventos o condiciones específicas, como movimientos no autorizados, exceso de velocidad o recordatorios de mantenimiento, lo que mantiene a los operadores de mina informados y en control en todo momento. Otorga permisos y realiza un seguimiento de los patrones de ruta."
     },
     "howdoesitworkSection":{
-        "title": "How does it work?",
+        "title": "¿Cómo funciona?",
         "segment1": {
-            "title": "Natural people",
-            "description": "Easily integrate GUARDIANTS with your vehicle in minutes and see your vehicle's data come to life on our user-friendly dashboard, giving you complete control and peace of mind."
+            "title": "Consumidores",
+            "description": "Escanea el código QR de los productos que compres para poder ver su certificación y todo el ciclo de transporte por el que ha pasado."
         },
         "segment2": {
-            "title": "Enterprises and Governmental entities",
-            "description": "Manage your fleet's location, get a full aprobation system and integrate our system to your preexisting infraestructure for an enhanced data security and management experience."
+            "title": "Empresas y Joyerías",
+            "description": "Gestiona la ubicación de tu flota, certifica los datos de los minerales e integra nuestro sistema en tu infraestructura actual para mejorar la seguridad de los datos y la gestión."
         }
     },
     "rights":{
-        "content": "© 2026 GOLDMETRICS. Todos los derechos reservados."
+        "content": "© 2026 GOLDCHECK. Todos los derechos reservados."
     },
     "faq": {
-    "title": "FAQs",
+    "title": "Preguntas frecuentes",
     "q1": {
-        "question": "What is GUARDIANTS and how does it work?",
-        "answer": "GUARDIANTS is an intelligent vehicle monitoring platform that uses IoT sensors and telemetry to provide real-time tracking, security alerts, and fleet management from any device."
+        "question": "¿Qué es GoldCheck y cómo funciona?",
+        "answer": "GoldCheck es una plataforma inteligente de monitorización de minerales que utiliza sensores IoT y telemetría para ofrecer seguimiento en tiempo real, alertas de seguridad y gestión de flotas desde cualquier dispositivo."
     },
     "q2": {
-        "question": "Is GUARDIANTS compatible with any type of vehicle?",
-        "answer": "Yes, GUARDIANTS is compatible with most vehicles manufactured after 2005 that have a standard OBD-II port, including cars, trucks, motorcycles, and heavy machinery."
+        "question": "¿Es GoldCheck compatible con cualquier tipo de mineral?",
+        "answer": "Sí, GoldCheck es compatible con la mayoría de los minerales, enfocado principalmente en el oro."
     },
     "q3": {
-        "question": "How secure is my data on the platform?",
-        "answer": "We use end-to-end encryption and comply with international data protection regulations. Your data is stored in certified secure servers and is never shared with third parties without your consent."
+        "question": "¿Qué grado de seguridad tienen mis datos en la plataforma?",
+        "answer": "Utilizamos cifrado de extremo a extremo y cumplimos con la normativa internacional en materia de protección de datos. Tus datos se almacenan en servidores seguros certificados y nunca se comparten con terceros sin tu consentimiento."
     },
     "q4": {
-        "question": "Can I manage multiple vehicles at the same time?",
-        "answer": "Absolutely. Our enterprise plan allows you to manage unlimited vehicles from a single dashboard, with role-based access control for your team members."
+        "question": "¿Puedo gestionar varios productos a la vez?",
+        "answer": "Por supuesto. Nuestro plan empresarial te permite gestionar un número ilimitado de productos desde un único panel de control."
     },
     "q5": {
-        "question": "What happens if my vehicle goes to an area without signal?",
-        "answer": "The device stores data locally and syncs automatically once connectivity is restored, ensuring no tracking gaps in your vehicle's history."
+        "question": "¿Qué ocurre si el vehículo de transporte se adentra en una zona sin cobertura?",
+        "answer": "El dispositivo almacena los datos localmente y se sincroniza automáticamente en cuanto se restablece la conexión, lo que garantiza que no haya lagunas en el historial de seguimiento del transporte."
     }
     
-
+    },
+    "pricing": {
+        "title": "Planes y Precios",
+        "subtitle": "Selecciona tu rol y encuentra el plan que se adapta a ti.",
+        "monthly": "Mensual",
+        "annual": "Anual",
+        "save": "-20%",
+        "per_month": "/mes",
+        "forever": "Gratis para siempre",
+        "free_label": "Gratis",
+        "billed_annual": "Facturado anualmente",
+        "custom": "A medida",
+        "badge": { "popular": "Más Popular" },
+        "tab": {
+            "consumer": "Consumidores",
+            "jewelry": "Joyerías",
+            "mining": "Empresas Mineras"
+        },
+        "cta": {
+            "free": "Empezar Gratis",
+            "start": "Comenzar",
+            "choose": "Elegir Plan",
+            "contact": "Contactar Ventas"
+        },
+        "consumer": {
+            "free": {
+                "name": "Gratuito",
+                "desc": "Descubre la cadena de confianza del oro",
+                "f1": "5 escaneos QR por mes",
+                "f2": "Vista básica del certificado",
+                "f3": "Últimas 3 verificaciones en historial"
+            },
+            "pro": {
+                "name": "Verificador Pro",
+                "desc": "Para el comprador consciente de oro",
+                "f1": "Escaneos QR ilimitados",
+                "f2": "Historial completo de verificaciones",
+                "f3": "Alertas de autenticidad en tiempo real",
+                "f4": "Informe detallado de origen y ruta",
+                "f5": "Directorio de vendedores de confianza"
+            }
+        },
+        "jewelry": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Empieza a certificar tus piezas de joyería",
+                "f1": "5 piezas certificadas / mes",
+                "f2": "Dashboard básico",
+                "f3": "Soporte por email"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "Para joyerías en crecimiento",
+                "f1": "50 piezas certificadas / mes",
+                "f2": "Analytics avanzado",
+                "f3": "Certificación QR avanzada",
+                "f4": "Soporte prioritario"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Solución empresarial completa para joyerías",
+                "f1": "Piezas certificadas ilimitadas",
+                "f2": "Acceso a API",
+                "f3": "Gestión multi-empresa",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Gerente dedicado"
+            }
+        },
+        "mining": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Empieza a rastrear tus operaciones mineras",
+                "f1": "5 lotes / mes",
+                "f2": "Dashboard básico",
+                "f3": "Soporte por email"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "Para operaciones mineras en crecimiento",
+                "f1": "50 lotes / mes",
+                "f2": "Analytics avanzado",
+                "f3": "IoT en tiempo real",
+                "f4": "Soporte prioritario"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Solución empresarial minera completa",
+                "f1": "Lotes ilimitados",
+                "f2": "Acceso a API",
+                "f3": "Gestión multi-empresa",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Gerente dedicado"
+            }
+        }
     },
     "contact": {
-    "title": "Contact",
-    "name": "Full name",
-    "phone": "Phone",
-    "email": "Email",
-    "userType": "User type",
-    "type1": "Final consumer",
-    "type2": "Jewelry Store",
-    "type3": "Mining Company",
-    "message": "Message",
-    "send": "Send Message"
+    "title": "Contacto",
+    "name": "Nombre completo",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "userType": "Tipo de usuario",
+    "type1": "Consumidor final",
+    "type2": "Joyería",
+    "type3": "Empresa minera",
+    "message": "Mensaje",
+    "send": "Enviar mensaje"
     }   
 }
