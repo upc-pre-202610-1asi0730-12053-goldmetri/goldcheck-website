@@ -1,3 +1,8 @@
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Colors y typography */
 :root {
   --color-primary-dark: #2A2A2A;
@@ -62,6 +67,24 @@ img {
 .btn:hover {
   opacity: 0.9;
   transform: translateY(-2px);
+}
+
+/* Brand name */
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-dark-text);
+  letter-spacing: 0.15em;
+}
+
+/* Hero tagline */
+.hero-tagline {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--color-secondary-gold);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 /* Navigation */
@@ -861,14 +884,86 @@ textarea.form-control {
     line-height: 1;
 }
 
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  order: 3;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-dark-text);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile nav dropdown */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* Responsive */
 @media (max-width: 992px) {
-  .mv-row, .mv-row.reverse, .contact-section {
-    flex-direction: column;
+  .navbar {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .nav-links {
     display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--color-white);
+    padding: 0.5rem 0 1rem;
+    order: 4;
+    border-top: 1px solid rgba(197, 160, 89, 0.2);
+  }
+
+  .nav-links.open {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 6px;
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(197, 160, 89, 0.08);
+  }
+
+  .mv-row, .mv-row.reverse, .contact-section {
+    flex-direction: column;
+  }
+
+  .nav-actions {
+    order: 2;
   }
 }
 
@@ -878,4 +973,6 @@ textarea.form-control {
   .section-padding { padding: 3rem 5%; }
   .mv-row { gap: 2rem; }
   .contact-image { padding-top: 0; }
+  .segment-tabs { justify-content: flex-start; }
+  .segment-tab { padding: 0.8rem 1.2rem; font-size: 0.75rem; }
 }
