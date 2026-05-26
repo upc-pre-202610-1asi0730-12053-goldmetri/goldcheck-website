@@ -28,12 +28,12 @@
     },
     "benefits": {
         "title": "Ventajas",
-        "benefit1": "Gestiona tu flota con facilidad: GoldCheck ofrece una interfaz intuitiva que te permite supervisar y gestionar los minerales sin esfuerzo, ahorrándote tiempo y recursos.",
-        "benefit2": "Mayor seguridad: GoldCheck ofrece funciones de seguridad avanzadas para proteger los vehículos de transporte contra usos no autorizados.",
-        "benefit3": "Información en tiempo real: Accede al instante a datos esenciales sobre la ruta de los minerales, lo que te permite tomar decisiones fundamentadas y llevar a cabo una gestión proactiva.",
-        "benefit4": "Rentabilidad: Reduzca los costes operativos mediante una mejor gestión de la flota y una asignación optimizada de los recursos.",
-        "benefit5": "Garantía de cumplimiento: Asegura el cumplimiento de la normativa del sector gracias a unas completas funciones de generación de informes y documentación.",
-        "benefit6": "Experiencia intuitiva: disfruta de una experiencia fluida con nuestra plataforma intuitiva, diseñada para facilitar su uso."
+        "benefit1": { "title": "Gestión de Minerales", "desc": "Supervisa y gestiona lotes de minerales sin esfuerzo a través de una interfaz intuitiva, ahorrando tiempo y recursos operativos." },
+        "benefit2": { "title": "Mayor Seguridad", "desc": "Funciones de seguridad avanzadas protegen los vehículos de transporte y los lotes de minerales contra accesos no autorizados." },
+        "benefit3": { "title": "Información en Tiempo Real", "desc": "Accede al instante a datos esenciales sobre la ruta de los minerales para tomar decisiones fundamentadas y una gestión proactiva." },
+        "benefit4": { "title": "Rentabilidad", "desc": "Reduce los costos operativos mediante una gestión más inteligente de la flota y una asignación optimizada de recursos en la cadena." },
+        "benefit5": { "title": "Garantía de Cumplimiento", "desc": "Asegura el cumplimiento normativo con completas funciones de reportes, documentación y auditorías automatizadas." },
+        "benefit6": { "title": "Experiencia Intuitiva", "desc": "Disfruta de una experiencia fluida en todos los dispositivos con nuestra plataforma diseñada para cada rol en la cadena." }
     },
     "telemetrySection":{
         "title": "Donde se unen la telemetría y la seguridad",
