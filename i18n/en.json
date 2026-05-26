@@ -61,25 +61,25 @@
     "title": "FAQs",
     "q1": {
         "question": "What is GoldCheck and how does it work?",
-        "answer": "GoldCheck is a smart mineral monitoring platform that uses IoT sensors and telemetry to provide real-time tracking, security alerts, and fleet management from any device."
+        "answer": "GoldCheck is a gold traceability platform that uses IoT sensors and QR certification to track minerals in real time from the mine to the end consumer, ensuring authenticity and transparency across the entire supply chain."
     },
     "q2": {
-        "question": "Is GoldCheck compatible with any type of vehicle?",
-        "answer": "Yes, GoldCheck is compatible with most minerals, with a primary focus on gold."
+        "question": "What type of minerals does GoldCheck support?",
+        "answer": "GoldCheck is primarily focused on gold and precious minerals. Our platform supports the full traceability cycle regardless of the mineral's origin or processing stage."
     },
     "q3": {
         "question": "How secure is my data on the platform?",
         "answer": "We use end-to-end encryption and comply with international data protection regulations. Your data is stored in certified secure servers and is never shared with third parties without your consent."
     },
     "q4": {
-        "question": "Can I manage multiple products at the same time?",
-        "answer": "Absolutely. Our enterprise plan allows you to manage unlimited products from a single dashboard." 
+        "question": "Can I manage multiple products or batches at the same time?",
+        "answer": "Absolutely. Our Gold and Platinum plans allow you to manage large volumes of certified pieces or mineral batches from a single dashboard, with full traceability for each one."
     },
     "q5": {
-        "question": "What happens if the transport vehicle goes to an area without signal?",
-        "answer": "The device stores data locally and syncs automatically once connectivity is restored, ensuring no tracking gaps in the vehicle's transport history."
+        "question": "What happens if the transport vehicle loses signal during transit?",
+        "answer": "The device stores data locally and syncs automatically once connectivity is restored, ensuring no gaps in the mineral's transport history or certification chain."
     }
-    
+
     },
     
     "pricing": {
