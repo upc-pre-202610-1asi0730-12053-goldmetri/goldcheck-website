@@ -65,8 +65,20 @@ img {
 }
 
 .btn:hover {
-  opacity: 0.9;
   transform: translateY(-2px);
+}
+
+.btn-gold:hover {
+  background-color: #d4ae6a;
+  box-shadow: 0 0 20px rgba(197, 160, 89, 0.5);
+}
+
+.btn-light:hover {
+  opacity: 0.85;
+}
+
+.btn-white:hover {
+  opacity: 0.85;
 }
 
 /* Brand name */
@@ -179,6 +191,13 @@ img {
   max-width: 800px;
 }
 
+/* Hero CTA override */
+.btn-hero {
+  padding: 1rem 3rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+}
+
 /* Mission & Vision */
 .mission-vision {
   display: flex;
@@ -203,8 +222,8 @@ img {
 }
 
 .mv-image img {
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
   width: 100%;
   max-height: 450px;
   object-fit: cover;
@@ -242,7 +261,8 @@ img {
 .section-header h2 {
   color: var(--color-primary-gold);
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 700;
+  align-self: center;
 }
 
 .section-header::before,
@@ -307,11 +327,10 @@ img {
 
 /* Card icon */
 .card-icon {
-  width: 44px;
-  height: 44px;
-  margin-bottom: 0.4rem;
-  color: var(--color-dark-text);
-  opacity: 0.7;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-gold);
 }
 
 .card-icon svg {
