@@ -6,11 +6,11 @@
         "about": "Quiénes somos",
         "how": "¿Cómo funciona?",
         "faq": "Preguntas frecuentes",
-        "contact": "Contacto"
+        "contact": "Contacto" 
     },
     "cta":{
         "login": "Iniciar sesión",
-        "signup": "Registrarse"
+        "signup": "Registrarse" 
     },
     "heroSection": {
         "tagline": "PREVENIR | PROTEGER | OPTIMIZAR",
