@@ -5,8 +5,9 @@
         "home": "Home",
         "about": "About Us",
         "how": "How does it work?",
+        "pricing": "Plans",
         "faq": "FAQs",
-        "contact": "Contact" 
+        "contact": "Contact"
     },
     "cta":{
         "login": "Login",
@@ -81,6 +82,100 @@
     
     },
     
+    "pricing": {
+        "title": "Plans & Pricing",
+        "subtitle": "Select your role and find the plan built for you.",
+        "monthly": "Monthly",
+        "annual": "Annual",
+        "save": "-20%",
+        "per_month": "/mo",
+        "forever": "Forever free",
+        "free_label": "Free",
+        "billed_annual": "Billed annually",
+        "custom": "Custom",
+        "badge": { "popular": "Most Popular" },
+        "tab": {
+            "consumer": "Consumers",
+            "jewelry": "Jewelry Stores",
+            "mining": "Mining Companies"
+        },
+        "cta": {
+            "free": "Start Free",
+            "start": "Get Started",
+            "choose": "Choose Plan",
+            "contact": "Contact Sales"
+        },
+        "consumer": {
+            "free": {
+                "name": "Free",
+                "desc": "Discover the gold chain of trust",
+                "f1": "5 QR scans per month",
+                "f2": "Basic certificate view",
+                "f3": "Last 3 verifications history"
+            },
+            "pro": {
+                "name": "Verifier Pro",
+                "desc": "For the conscious gold buyer",
+                "f1": "Unlimited QR scans",
+                "f2": "Full verification history",
+                "f3": "Real-time authenticity alerts",
+                "f4": "Detailed origin & route report",
+                "f5": "Trusted seller directory"
+            }
+        },
+        "jewelry": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Start certifying your jewelry pieces",
+                "f1": "5 certified pieces / month",
+                "f2": "Basic dashboard",
+                "f3": "Email support"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "For growing jewelry businesses",
+                "f1": "50 certified pieces / month",
+                "f2": "Advanced analytics",
+                "f3": "Advanced QR certification",
+                "f4": "Priority support"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Full-scale jewelry enterprise solution",
+                "f1": "Unlimited certified pieces",
+                "f2": "API access",
+                "f3": "Multi-company management",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Dedicated account manager"
+            }
+        },
+        "mining": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Start tracking your mining operations",
+                "f1": "5 batches / month",
+                "f2": "Basic dashboard",
+                "f3": "Email support"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "For growing mining operations",
+                "f1": "50 batches / month",
+                "f2": "Advanced analytics",
+                "f3": "Real-time IoT monitoring",
+                "f4": "Priority support"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Full-scale enterprise mining solution",
+                "f1": "Unlimited batches",
+                "f2": "API access",
+                "f3": "Multi-company management",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Dedicated account manager"
+            }
+        }
+    },
     "contact": {
     "title": "Contact",
     "name": "Full name",
