@@ -3,359 +3,871 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoldCheck - The chain of trust</title>
+    <title>GoldCheck – The Chain of Trust</title>
+    <meta name="description" content="GoldCheck is a gold traceability platform connecting miners, jewelry stores and consumers through IoT telemetry, QR certification and transparent supply chain tracking.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GoldCheck – The Chain of Trust">
+    <meta property="og:description" content="Track, certify and verify gold from mine to consumer. Connecting miners, jewelers and buyers with transparent, verifiable data.">
+    <meta property="og:image" content="assets/images/aesthetic-cover-photo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GoldCheck – The Chain of Trust">
+    <meta name="twitter:description" content="Track, certify and verify gold from mine to consumer.">
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Header -->
-    <nav class="navbar">
-        <div class="nav-logo">
-            <img src="assets/images/goldmetrics-logo.png" alt="GOLDMETRICS Logo" width="80">
+<!-- Navigation Header -->
+<nav class="navbar">
+    <div class="nav-logo">
+        <img src="assets/images/goldmetrics-logo.png" alt="GOLDMETRICS Logo" width="80">
+    </div>
+    <div class="brand-name">GOLDCHECK</div>
+    <ul class="nav-links">
+        <li><a href="#home" data-i18n="headers.home">Home</a></li>
+        <li><a href="#about" data-i18n="headers.about">About Us</a></li>
+        <li><a href="#how" data-i18n="headers.how">How does it work?</a></li>
+        <li><a href="#pricing" data-i18n="headers.pricing">Plans</a></li>
+        <li><a href="#faq" data-i18n="headers.faq">FAQs</a></li>
+        <li><a href="#contact" data-i18n="headers.contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="nav-actions">
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+            <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
         </div>
-        <div class="brand-name">GOLDCHECK</div>
-        <ul class="nav-links">
-            <li><a href="#home" data-i18n="headers.home">Home</a></li>
-            <li><a href="#about" data-i18n="headers.about">About Us</a></li>
-            <li><a href="#how" data-i18n="headers.how">How does it work?</a></li>
-            <li><a href="#faq" data-i18n="headers.faq">FAQs</a></li>
-            <li><a href="#contact" data-i18n="headers.contact">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-            <div class="language-switcher">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="es">ES</button>
-            </div>
 
-            <a href="https://luxury-beignet-b30759.netlify.app">
-                <button class="btn btn-gold" data-i18n="cta.login">Login</button>
-            </a>
-            <a href="https://luxury-beignet-b30759.netlify.app">
-                <button class="btn btn-light" data-i18n="cta.signup">Sign Up</button>
-            </a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section section-padding" id="home">
-        <div class="hero-tagline" data-i18n="heroSection.tagline">PREVENT | PROTECT | OPTIMIZE</div>
-        <h1 data-i18n="heroSection.slogan">The new era of intelligent vehicle security and management.</h1>
-        <a href="https://luxury-beignet-b30759.netlify.app/">
-            <button class="btn btn-gold" data-i18n="heroSection.cta">Get Started</button>
+        <a data-app-link href="#">
+            <button class="btn btn-gold" data-i18n="cta.login">Login</button>
         </a>
-    </section>
+        <a data-app-link href="#">
+            <button class="btn btn-light" data-i18n="cta.signup">Sign Up</button>
+        </a>
+    </div>
+</nav>
 
-    <!-- Mission & Vision Section -->
-    <section class="mission-vision section-padding" id="about">
+<!-- Hero Section -->
+<section class="hero-section section-padding" id="home">
+    <div class="hero-tagline" data-i18n="heroSection.tagline">PREVENT | PROTECT | OPTIMIZE</div>
+    <h1 data-i18n="heroSection.slogan">The new era of intelligent vehicle security and management.</h1>
+    <a data-app-link href="#">
+        <button class="btn btn-gold btn-hero" data-i18n="heroSection.cta">Get Started</button>
+    </a>
+</section>
 
-        <!-- Mission -->
-        <div class="mv-row">
-            <div class="mv-image">
-                <img src="assets/images/mission-cover.png" alt="Mission image">
-            </div>
-            <div class="mv-content">
-                <h3 data-i18n="mission.title">Mission</h3>
-                <p data-i18n="mission.content">Our mission is to transform vehicle safety through intelligent monitoring and advanced telemetry.</p>
-            </div>
-        </div>
+<!-- Mission & Vision Section -->
+<section class="mission-vision section-padding" id="about">
 
-        <!-- Vision -->
-        <div class="mv-row reverse">
-            <div class="mv-image">
-                <img src="assets/images/vision.png" alt="Vision image">
-            </div>
-            <div class="mv-content">
-                <h3 data-i18n="vision.title">Vision</h3>
-                <p data-i18n="vision.content">Our vision is to consolidate ourselves as the leading platform in vehicle security and intelligent asset management.</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="section-padding">
-        <div class="section-header">
-            <h2 data-i18n="benefits.title">Benefits</h2>
-        </div>
-        <div class="cards-grid">
-            <div class="card">
-                <p data-i18n="benefits.benefit1">Manage your fleet with ease.</p>
-            </div>
-            <div class="card">
-                <p data-i18n="benefits.benefit2">Enhanced Security: GOLDCHECK offers advanced security features.</p>
-            </div>
-            <div class="card">
-                <p data-i18n="benefits.benefit3">Real-time Insights: Get instant access to critical vehicle data.</p>
-            </div>
-            <div class="card">
-                <p data-i18n="benefits.benefit4">Cost Efficiency: Reduce operational costs through improved fleet management.</p>
-            </div>
-            <div class="card">
-                <p data-i18n="benefits.benefit5">Compliance Assurance: Ensure adherence to industry regulations.</p>
-            </div>
-            <div class="card">
-                <p data-i18n="benefits.benefit6">User-Friendly Experience: Enjoy a seamless experience.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Telemetry Section -->
-    <section class="mv-row section-padding" id="how">
-        <div class="mv-content">
-            <h3 data-i18n="telemetrySection.title">Where Telemetry and Security Meets</h3>
-            <ul>
-                <li data-i18n="telemetrySection.bullet1">Controller Area Network (CAN) Integration</li>
-                <li data-i18n="telemetrySection.bullet2">Geographic Information System (GIS) Mapping</li>
-                <li data-i18n="telemetrySection.bullet3">Custom Alerts and Notifications</li>
-            </ul>
-        </div>
+    <!-- Mission -->
+    <div class="mv-row">
         <div class="mv-image">
-           <img src="assets/images/jewerly.png" alt="Telemetry graphic">
+            <img src="assets/images/mission-cover.png" alt="Mission image" loading="lazy">
         </div>
-    </section>
+        <div class="mv-content">
+            <h3 data-i18n="mission.title">Mission</h3>
+            <p data-i18n="mission.content">Our mission is to transform vehicle safety through intelligent monitoring and advanced telemetry.</p>
+        </div>
+    </div>
 
-    <!-- How It Works Section -->
-    <section class="section-padding" id="how-works">
-        <div class="section-header">
-            <h2 data-i18n="howdoesitworkSection.title">How does it work?</h2>
+    <!-- Vision -->
+    <div class="mv-row reverse">
+        <div class="mv-image">
+            <img src="assets/images/vision.png" alt="Vision image" loading="lazy">
         </div>
-        <div class="cards-grid">
-            <div class="card">
-                <h4 data-i18n="howdoesitworkSection.segment1.title">Natural people</h4>
-                <p data-i18n="howdoesitworkSection.segment1.description">Easily integrate GOLDCHECK with your vehicle in minutes.</p>
-            </div>
-            <div class="card">
-                <h4 data-i18n="howdoesitworkSection.segment2.title">Enterprises and Governmental entities</h4>
-                <p data-i18n="howdoesitworkSection.segment2.description">Manage your fleet's location with a full approval system.</p>
-            </div>
+        <div class="mv-content">
+            <h3 data-i18n="vision.title">Vision</h3>
+            <p data-i18n="vision.content">Our vision is to consolidate ourselves as the leading platform in vehicle security and intelligent asset management.</p>
         </div>
-    </section>
+    </div>
 
-     <!-- Contact Section -->
-    <section class="section-padding" id="contact">
-        <div class="section-header">
-            <h2 data-i18n="contact.title">Contact</h2>
-        </div>
-        <div class="contact-section">
-            <div class="contact-form">
-                <div class="form-group">
-                    <label for="contact-name" data-i18n="contact.name">Full name</label>
-                    <input type="text" id="contact-name" name="name" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="contact-phone" data-i18n="contact.phone">Phone</label>
-                    <input type="tel" id="contact-phone" name="phone" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="contact-email" data-i18n="contact.email">Email</label>
-                    <input type="email" id="contact-email" name="email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label data-i18n="contact.userType">User type</label>
-                    <div class="radio-group">
-                        <label class="radio-option">
-                            <input type="radio" name="user-type" value="final-consumer">
-                            <span data-i18n="contact.type1">Final consumer</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="user-type" value="jewelry-store">
-                            <span data-i18n="contact.type2">Jewelry Store</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="user-type" value="mining-company">
-                            <span data-i18n="contact.type3">Mining Company</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="contact-message" data-i18n="contact.message">Message</label>
-                    <textarea id="contact-message" name="message" class="form-control" rows="4"></textarea>
-                </div>
-                <!-- Añadido id para capturar el clic -->
-                <button id="btn-save-local" class="btn btn-gold" data-i18n="contact.send">Send Message</button>
-            </div>
-            <div class="contact-image">
-                <img src="assets/images/aesthetic-cover-photo.png" alt="Contact image">
-            </div>
-        </div>
-    </section>
+</section>
 
-    <!-- FAQ Section -->
-    <section class="section-padding faq-container" id="faq">
-        <div class="section-header">
-            <h2 data-i18n="faq.title">FAQs</h2>
+<!-- Benefits Section -->
+<section class="section-padding">
+    <div class="section-header">
+        <h2 data-i18n="benefits.title">Benefits</h2>
+    </div>
+    <div class="cards-grid cards-grid-3">
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/>
+                    <line x1="12" y1="22" x2="12" y2="15.5"/>
+                    <polyline points="22 8.5 12 15.5 2 8.5"/>
+                </svg>
+            </div>
+            <h4 class="card-title" data-i18n="benefits.benefit1.title">Mineral Management</h4>
+            <p class="card-desc" data-i18n="benefits.benefit1.desc">Monitor and manage mineral batches effortlessly.</p>
         </div>
-        <ul class="faq-list">
-            <li class="faq-item" onclick="toggleFaq(this)">
-                <span data-i18n="faq.q1.question">What is GOLDCHECK and how does it work?</span>
-                <span class="faq-icon">+</span>
-                <div class="faq-answer">
-                    <p data-i18n="faq.q1.answer">GOLDCHECK is an intelligent vehicle monitoring platform that uses IoT sensors and telemetry to provide real-time tracking, security alerts, and fleet management from any device.</p>
-                </div>
-            </li>
-            <li class="faq-item" onclick="toggleFaq(this)">
-                <span data-i18n="faq.q2.question">Is GOLDCHECK compatible with any type of vehicle?</span>
-                <span class="faq-icon">+</span>
-                <div class="faq-answer">
-                    <p data-i18n="faq.q2.answer">Yes, GOLDCHECK is compatible with most vehicles manufactured after 2005 that have a standard OBD-II port, including cars, trucks, motorcycles, and heavy machinery.</p>
-                </div>
-            </li>
-            <li class="faq-item" onclick="toggleFaq(this)">
-                <span data-i18n="faq.q3.question">How secure is my data on the platform?</span>
-                <span class="faq-icon">+</span>
-                <div class="faq-answer">
-                    <p data-i18n="faq.q3.answer">We use end-to-end encryption and comply with international data protection regulations. Your data is stored in certified secure servers and is never shared with third parties without your consent.</p>
-                </div>
-            </li>
-            <li class="faq-item" onclick="toggleFaq(this)">
-                <span data-i18n="faq.q4.question">Can I manage multiple vehicles at the same time?</span>
-                <span class="faq-icon">+</span>
-                <div class="faq-answer">
-                    <p data-i18n="faq.q4.answer">Absolutely. Our enterprise plan allows you to manage unlimited vehicles from a single dashboard, with role-based access control for your team members.</p>
-                </div>
-            </li>
-            <li class="faq-item" onclick="toggleFaq(this)">
-                <span data-i18n="faq.q5.question">What happens if my vehicle goes to an area without signal?</span>
-                <span class="faq-icon">+</span>
-                <div class="faq-answer">
-                    <p data-i18n="faq.q5.answer">The device stores data locally and syncs automatically once connectivity is restored, ensuring no tracking gaps in your vehicle's history.</p>
-                </div>
-            </li>
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <polyline points="9 12 11 14 15 10"/>
+                </svg>
+            </div>
+            <h4 class="card-title" data-i18n="benefits.benefit2.title">Enhanced Security</h4>
+            <p class="card-desc" data-i18n="benefits.benefit2.desc">Advanced security features protect your operations.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+            </div>
+            <h4 class="card-title" data-i18n="benefits.benefit3.title">Real-time Insights</h4>
+            <p class="card-desc" data-i18n="benefits.benefit3.desc">Instant access to critical mineral routing data.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23"/>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+            </div>
+            <h4 class="card-title" data-i18n="benefits.benefit4.title">Cost Efficiency</h4>
+            <p class="card-desc" data-i18n="benefits.benefit4.desc">Reduce operational costs across the supply chain.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 11l3 3L22 4"/>
+                    <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+                </svg>
+            </div>
+            <h4 class="card-title" data-i18n="benefits.benefit5.title">Compliance Assurance</h4>
+            <p class="card-desc" data-i18n="benefits.benefit5.desc">Comprehensive reporting and automated audit trails.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12" y2="18.01"/>
+                </svg>
+            </div>
+            <h4 class="card-title" data-i18n="benefits.benefit6.title">User-Friendly Experience</h4>
+            <p class="card-desc" data-i18n="benefits.benefit6.desc">Seamless experience across all devices and roles.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Telemetry Section -->
+<section class="mv-row section-padding" id="how">
+    <div class="mv-content">
+        <h3 data-i18n="telemetrySection.title">Where Telemetry and Security Meets</h3>
+        <ul>
+            <li data-i18n="telemetrySection.bullet1">Controller Area Network (CAN) Integration</li>
+            <li data-i18n="telemetrySection.bullet2">Geographic Information System (GIS) Mapping</li>
+            <li data-i18n="telemetrySection.bullet3">Custom Alerts and Notifications</li>
         </ul>
-    </section>
+    </div>
+    <div class="mv-image">
+        <img src="assets/images/jewerly.png" alt="Telemetry graphic" loading="lazy">
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <img class="footer-logo" src="assets/images/goldmetrics-logo.png" alt="GOLDMETRICS Logo">
-        <div class="social-icons">
-            <a href="#">&#x1F426;</a>
-            <a href="#">&#x1F4F7;</a>
-            <a href="#">&#x1F517;</a>
+<!-- How It Works Section -->
+<section class="section-padding" id="how-works">
+    <div class="section-header">
+        <h2 data-i18n="howdoesitworkSection.title">How does it work?</h2>
+    </div>
+    <div class="cards-grid">
+        <div class="card">
+            <h4 data-i18n="howdoesitworkSection.segment1.title">Natural people</h4>
+            <p data-i18n="howdoesitworkSection.segment1.description">Easily integrate GOLDCHECK with your vehicle in minutes.</p>
         </div>
-        <p class="footer-bottom" data-i18n="rights.content">© 2026 GOLDCHECK. All rights reserved.</p>
-    </footer>
+        <div class="card">
+            <h4 data-i18n="howdoesitworkSection.segment2.title">Enterprises and Governmental entities</h4>
+            <p data-i18n="howdoesitworkSection.segment2.description">Manage your fleet's location with a full approval system.</p>
+        </div>
+    </div>
+</section>
 
-    <script>
-        // i18n Configuration
-        const i18nConfig = {
-            defaultLanguage: 'en',
-            supportedLanguages: ['en', 'es']
-        };
+<!-- Pricing / Subscriptions Section -->
+<section class="section-padding pricing-section" id="pricing">
+    <div class="section-header">
+        <h2 data-i18n="pricing.title">Plans &amp; Pricing</h2>
+    </div>
+    <p class="pricing-subtitle" data-i18n="pricing.subtitle">Select your role and find the plan built for you.</p>
 
-        let translations = { en: {}, es: {} };
+    <!-- Billing Toggle -->
+    <div class="billing-toggle-wrap">
+        <span class="billing-label active-label" id="label-monthly" data-i18n="pricing.monthly">Monthly</span>
+        <label class="toggle-switch" for="billing-toggle">
+            <input type="checkbox" id="billing-toggle">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+        </label>
+        <span class="billing-label" id="label-annual" data-i18n="pricing.annual">Annual</span>
+        <span class="save-badge" data-i18n="pricing.save">-20%</span>
+    </div>
 
-        function getNestedValue(obj, path) {
-            if (!obj || Object.keys(obj).length === 0) return null;
-            return path.split('.').reduce((current, prop) => current?.[prop], obj);
+    <!-- Segment Tabs -->
+    <div class="segment-tabs" role="tablist">
+        <button class="segment-tab active" data-segment="consumer" role="tab" aria-selected="true">
+            <span class="tab-diamond"></span>
+            <span data-i18n="pricing.tab.consumer">Consumers</span>
+        </button>
+        <button class="segment-tab" data-segment="jewelry" role="tab" aria-selected="false">
+            <span class="tab-diamond"></span>
+            <span data-i18n="pricing.tab.jewelry">Jewelry Stores</span>
+        </button>
+        <button class="segment-tab" data-segment="mining" role="tab" aria-selected="false">
+            <span class="tab-diamond"></span>
+            <span data-i18n="pricing.tab.mining">Mining Companies</span>
+        </button>
+    </div>
+
+    <!-- Consumer Plans -->
+    <div class="pricing-grid active" id="plans-consumer" role="tabpanel">
+        <div class="pricing-card">
+            <div class="plan-header">
+                <div class="plan-tier" data-i18n="pricing.consumer.free.name">Free</div>
+                <p class="plan-desc" data-i18n="pricing.consumer.free.desc">Discover the gold chain of trust</p>
+            </div>
+            <div class="plan-price-wrap">
+                <div class="plan-price"><span class="price-dollar">$</span><span class="price-num">0</span></div>
+                <div class="price-note" data-i18n="pricing.forever">Forever free</div>
+            </div>
+            <hr class="plan-divider">
+            <ul class="plan-features">
+                <li data-i18n="pricing.consumer.free.f1">5 QR scans per month</li>
+                <li data-i18n="pricing.consumer.free.f2">Basic certificate view</li>
+                <li data-i18n="pricing.consumer.free.f3">Last 3 verifications history</li>
+            </ul>
+            <a data-app-link href="#" class="plan-btn btn-outline-gold" data-i18n="pricing.cta.free">Start Free</a>
+        </div>
+
+        <div class="pricing-card featured">
+            <div class="plan-badge" data-i18n="pricing.badge.popular">Most Popular</div>
+            <div class="plan-header">
+                <div class="plan-tier" data-i18n="pricing.consumer.pro.name">Verifier Pro</div>
+                <p class="plan-desc" data-i18n="pricing.consumer.pro.desc">For the conscious gold buyer</p>
+            </div>
+            <div class="plan-price-wrap">
+                <div class="plan-price">
+                    <span class="price-dollar">$</span>
+                    <span class="price-num" data-monthly="9" data-annual="7">9</span>
+                    <span class="price-period" data-i18n="pricing.per_month">/mo</span>
+                </div>
+                <div class="price-note annual-note" data-i18n="pricing.billed_annual">Billed annually</div>
+            </div>
+            <hr class="plan-divider">
+            <ul class="plan-features">
+                <li data-i18n="pricing.consumer.pro.f1">Unlimited QR scans</li>
+                <li data-i18n="pricing.consumer.pro.f2">Full verification history</li>
+                <li data-i18n="pricing.consumer.pro.f3">Real-time authenticity alerts</li>
+                <li data-i18n="pricing.consumer.pro.f4">Detailed origin &amp; route report</li>
+                <li data-i18n="pricing.consumer.pro.f5">Trusted seller directory</li>
+            </ul>
+            <a data-app-link href="#" class="plan-btn btn-gold" data-i18n="pricing.cta.choose">Choose Plan</a>
+        </div>
+    </div>
+
+    <!-- Jewelry Plans -->
+    <div class="pricing-grid" id="plans-jewelry" role="tabpanel">
+        <div class="pricing-card">
+            <div class="plan-header">
+                <div class="plan-icon">&#9672;</div>
+                <div class="plan-tier" data-i18n="pricing.jewelry.bronze.name">Bronze</div>
+                <p class="plan-desc" data-i18n="pricing.jewelry.bronze.desc">Start certifying your jewelry pieces</p>
+            </div>
+            <div class="plan-price-wrap">
+                <div class="plan-price price-free" data-i18n="pricing.free_label">Free</div>
+                <div class="price-note" data-i18n="pricing.forever">Forever free</div>
+            </div>
+            <hr class="plan-divider">
+            <ul class="plan-features">
+                <li data-i18n="pricing.jewelry.bronze.f1">5 certified pieces / month</li>
+                <li data-i18n="pricing.jewelry.bronze.f2">Basic dashboard</li>
+                <li data-i18n="pricing.jewelry.bronze.f3">Email support</li>
+            </ul>
+            <a data-app-link href="#" class="plan-btn btn-outline-gold" data-i18n="pricing.cta.free">Start Free</a>
+        </div>
+
+        <div class="pricing-card featured">
+            <div class="plan-badge" data-i18n="pricing.badge.popular">Most Popular</div>
+            <div class="plan-header">
+                <div class="plan-icon plan-icon-star">&#9733;</div>
+                <div class="plan-tier" data-i18n="pricing.jewelry.gold.name">Gold</div>
+                <p class="plan-desc" data-i18n="pricing.jewelry.gold.desc">For growing jewelry businesses</p>
+            </div>
+            <div class="plan-price-wrap">
+                <div class="plan-price">
+                    <span class="price-dollar">$</span>
+                    <span class="price-num" data-monthly="49" data-annual="39">49</span>
+                    <span class="price-period" data-i18n="pricing.per_month">/mo</span>
+                </div>
+                <div class="price-note annual-note" data-i18n="pricing.billed_annual">Billed annually</div>
+            </div>
+            <hr class="plan-divider">
+            <ul class="plan-features">
+                <li data-i18n="pricing.jewelry.gold.f1">50 certified pieces / month</li>
+                <li data-i18n="pricing.jewelry.gold.f2">Advanced analytics</li>
+                <li data-i18n="pricing.jewelry.gold.f3">Advanced QR certification</li>
+                <li data-i18n="pricing.jewelry.gold.f4">Priority support</li>
+            </ul>
+            <a data-app-link href="#" class="plan-btn btn-gold" data-i18n="pricing.cta.choose">Choose Plan</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="plan-header">
+                <div class="plan-icon plan-icon-crown">&#9818;</div>
+                <div class="plan-tier" data-i18n="pricing.jewelry.platinum.name">Platinum</div>
+                <p class="plan-desc" data-i18n="pricing.jewelry.platinum.desc">Full-scale jewelry enterprise solution</p>
+            </div>
+            <div class="plan-price-wrap">
+                <div class="plan-price">
+                    <span class="price-dollar">$</span>
+                    <span class="price-num" data-monthly="129" data-annual="103">129</span>
+                    <span class="price-period" data-i18n="pricing.per_month">/mo</span>
+                </div>
+                <div class="price-note annual-note" data-i18n="pricing.billed_annual">Billed annually</div>
+            </div>
+            <hr class="plan-divider">
+            <ul class="plan-features">
+                <li data-i18n="pricing.jewelry.platinum.f1">Unlimited certified pieces</li>
+                <li data-i18n="pricing.jewelry.platinum.f2">API access</li>
+                <li data-i18n="pricing.jewelry.platinum.f3">Multi-company management</li>
+                <li data-i18n="pricing.jewelry.platinum.f4">SLA 99.9% uptime</li>
+                <li data-i18n="pricing.jewelry.platinum.f5">Dedicated account manager</li>
+            </ul>
+            <a data-app-link href="#" class="plan-btn btn-outline-gold" data-i18n="pricing.cta.choose">Choose Plan</a>
+        </div>
+    </div>
+
+    <!-- Mining Plans -->
+    <div class="pricing-grid" id="plans-mining" role="tabpanel">
+        <div class="pricing-card">
+            <div class="plan-header">
+                <div class="plan-icon">&#9672;</div>
+                <div class="plan-tier" data-i18n="pricing.mining.bronze.name">Bronze</div>
+                <p class="plan-desc" data-i18n="pricing.mining.bronze.desc">Start tracking your mining operations</p>
+            </div>
+            <div class="plan-price-wrap">
+                <div class="plan-price price-free" data-i18n="pricing.free_label">Gratis</div>
+                <div class="price-note" data-i18n="pricing.forever">Forever free</div>
+            </div>
+            <hr class="plan-divider">
+            <ul class="plan-features">
+                <li data-i18n="pricing.mining.bronze.f1">5 batches / month</li>
+                <li data-i18n="pricing.mining.bronze.f2">Basic dashboard</li>
+                <li data-i18n="pricing.mining.bronze.f3">Email support</li>
+            </ul>
+            <a data-app-link href="#" class="plan-btn btn-outline-gold" data-i18n="pricing.cta.free">Start Free</a>
+        </div>
+
+        <div class="pricing-card featured">
+            <div class="plan-badge" data-i18n="pricing.badge.popular">Most Popular</div>
+            <div class="plan-header">
+                <div class="plan-icon plan-icon-star">&#9733;</div>
+                <div class="plan-tier" data-i18n="pricing.mining.gold.name">Gold</div>
+                <p class="plan-desc" data-i18n="pricing.mining.gold.desc">For growing mining operations</p>
+            </div>
+            <div class="plan-price-wrap">
+                <div class="plan-price">
+                    <span class="price-dollar">$</span>
+                    <span class="price-num" data-monthly="49" data-annual="39">49</span>
+                    <span class="price-period" data-i18n="pricing.per_month">/mo</span>
+                </div>
+                <div class="price-note annual-note" data-i18n="pricing.billed_annual">Billed annually</div>
+            </div>
+            <hr class="plan-divider">
+            <ul class="plan-features">
+                <li data-i18n="pricing.mining.gold.f1">50 batches / month</li>
+                <li data-i18n="pricing.mining.gold.f2">Advanced analytics</li>
+                <li data-i18n="pricing.mining.gold.f3">Real-time IoT monitoring</li>
+                <li data-i18n="pricing.mining.gold.f4">Priority support</li>
+            </ul>
+            <a data-app-link href="#" class="plan-btn btn-gold" data-i18n="pricing.cta.choose">Choose Plan</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="plan-header">
+                <div class="plan-icon plan-icon-crown">&#9818;</div>
+                <div class="plan-tier" data-i18n="pricing.mining.platinum.name">Platinum</div>
+                <p class="plan-desc" data-i18n="pricing.mining.platinum.desc">Full-scale enterprise mining solution</p>
+            </div>
+            <div class="plan-price-wrap">
+                <div class="plan-price">
+                    <span class="price-dollar">$</span>
+                    <span class="price-num" data-monthly="129" data-annual="103">129</span>
+                    <span class="price-period" data-i18n="pricing.per_month">/mo</span>
+                </div>
+                <div class="price-note annual-note" data-i18n="pricing.billed_annual">Billed annually</div>
+            </div>
+            <hr class="plan-divider">
+            <ul class="plan-features">
+                <li data-i18n="pricing.mining.platinum.f1">Unlimited batches</li>
+                <li data-i18n="pricing.mining.platinum.f2">API access</li>
+                <li data-i18n="pricing.mining.platinum.f3">Multi-company management</li>
+                <li data-i18n="pricing.mining.platinum.f4">SLA 99.9% uptime</li>
+                <li data-i18n="pricing.mining.platinum.f5">Dedicated account manager</li>
+            </ul>
+            <a data-app-link href="#" class="plan-btn btn-outline-gold" data-i18n="pricing.cta.choose">Choose Plan</a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section-padding faq-container" id="faq">
+    <div class="section-header">
+        <h2 data-i18n="faq.title">FAQs</h2>
+    </div>
+    <ul class="faq-list">
+        <li class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+                <span data-i18n="faq.q1.question">What is GOLDCHECK and how does it work?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+                <p data-i18n="faq.q1.answer">GOLDCHECK is an intelligent vehicle monitoring platform that uses IoT sensors and telemetry to provide real-time tracking, security alerts, and fleet management from any device.</p>
+            </div>
+        </li>
+        <li class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+                <span data-i18n="faq.q2.question">Is GOLDCHECK compatible with any type of vehicle?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+                <p data-i18n="faq.q2.answer">Yes, GOLDCHECK is compatible with most vehicles manufactured after 2005 that have a standard OBD-II port, including cars, trucks, motorcycles, and heavy machinery.</p>
+            </div>
+        </li>
+        <li class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+                <span data-i18n="faq.q3.question">How secure is my data on the platform?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+                <p data-i18n="faq.q3.answer">We use end-to-end encryption and comply with international data protection regulations. Your data is stored in certified secure servers and is never shared with third parties without your consent.</p>
+            </div>
+        </li>
+        <li class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+                <span data-i18n="faq.q4.question">Can I manage multiple vehicles at the same time?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+                <p data-i18n="faq.q4.answer">Absolutely. Our enterprise plan allows you to manage unlimited vehicles from a single dashboard, with role-based access control for your team members.</p>
+            </div>
+        </li>
+        <li class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+                <span data-i18n="faq.q5.question">What happens if my vehicle goes to an area without signal?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+                <p data-i18n="faq.q5.answer">The device stores data locally and syncs automatically once connectivity is restored, ensuring no tracking gaps in your vehicle's history.</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<section class="section-padding" id="contact">
+    <div class="section-header">
+        <h2 data-i18n="contact.title">Contact</h2>
+    </div>
+    <div class="contact-section">
+        <div class="contact-form">
+            <div class="form-group">
+                <label for="contact-name" data-i18n="contact.name">Full name</label>
+                <input type="text" id="contact-name" name="name" class="form-control" required placeholder=" ">
+            </div>
+            <div class="form-group">
+                <label for="contact-phone" data-i18n="contact.phone">Phone</label>
+                <input type="tel" id="contact-phone" name="phone" class="form-control" required placeholder=" ">
+            </div>
+            <div class="form-group">
+                <label for="contact-email" data-i18n="contact.email">Email</label>
+                <input type="email" id="contact-email" name="email" class="form-control" required placeholder=" ">
+            </div>
+            <div class="form-group">
+                <label data-i18n="contact.userType">User type</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="user-type" value="final-consumer">
+                        <span data-i18n="contact.type1">Final consumer</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="user-type" value="jewelry-store">
+                        <span data-i18n="contact.type2">Jewelry Store</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="user-type" value="mining-company">
+                        <span data-i18n="contact.type3">Mining Company</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contact-message" data-i18n="contact.message">Message</label>
+                <textarea id="contact-message" name="message" class="form-control" rows="4" required placeholder=" "></textarea>
+            </div>
+            <button id="btn-save-local" class="btn btn-gold" data-i18n="contact.send">Send Message</button>
+            <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+        </div>
+        <div class="contact-image">
+            <img src="assets/images/aesthetic-cover-photo.png" alt="Contact image" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<!-- Back to top -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</button>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <img class="footer-logo" src="assets/images/goldmetrics-logo.png" alt="GOLDMETRICS Logo" loading="lazy">
+            <p class="footer-tagline">The chain of trust</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <ul>
+                <li><a href="#home" data-i18n="headers.home">Home</a></li>
+                <li><a href="#about" data-i18n="headers.about">About Us</a></li>
+                <li><a href="#how" data-i18n="headers.how">How does it work?</a></li>
+                <li><a href="#pricing" data-i18n="headers.pricing">Plans</a></li>
+                <li><a href="#faq" data-i18n="headers.faq">FAQs</a></li>
+                <li><a href="#contact" data-i18n="headers.contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#" aria-label="X (Twitter)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.736-8.836L1.254 2.25H8.08l4.26 5.636 5.904-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p data-i18n="rights.content">© 2026 GOLDCHECK. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // App external URL — update here if the deployment URL changes
+    const APP_URL = 'https://luxury-beignet-b30759.netlify.app';
+
+    // i18n Configuration
+    const i18nConfig = {
+        defaultLanguage: 'en',
+        supportedLanguages: ['en', 'es']
+    };
+
+    let translations = { en: {}, es: {} };
+
+    function getNestedValue(obj, path) {
+        if (!obj || Object.keys(obj).length === 0) return null;
+        return path.split('.').reduce((current, prop) => current?.[prop], obj);
+    }
+
+    function applyTranslations(language) {
+        if (Object.keys(translations[language]).length === 0) {
+            console.warn(`Translations for ${language} are empty.`);
+            return;
         }
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const text = getNestedValue(translations[language], key);
+            if (text) {
+                element.innerHTML = text;
+            } else {
+                console.warn(`Missing translation key: ${key}`);
+            }
+        });
+    }
 
-        function applyTranslations(language) {
-            if (Object.keys(translations[language]).length === 0) {
-                console.warn(`Translations for ${language} are empty.`);
+    function setLanguage(language) {
+        if (!i18nConfig.supportedLanguages.includes(language)) {
+            language = i18nConfig.defaultLanguage;
+        }
+        localStorage.setItem('language', language);
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === language);
+        });
+        document.documentElement.lang = language;
+        applyTranslations(language);
+    }
+
+    async function loadTranslations() {
+        try {
+            const cacheBuster = new Date().getTime();
+            const [enResponse, esResponse] = await Promise.all([
+                fetch(`./i18n/en.json?v=${cacheBuster}`),
+                fetch(`./i18n/es.json?v=${cacheBuster}`)
+            ]);
+            if (!enResponse.ok || !esResponse.ok) {
+                throw new Error("JSON files not found");
+            }
+            translations.en = await enResponse.json();
+            translations.es = await esResponse.json();
+            const savedLanguage = localStorage.getItem('language') || i18nConfig.defaultLanguage;
+            setLanguage(savedLanguage);
+        } catch (error) {
+            console.error('Error loading translations:', error);
+            alert("Error loading languages.\n\nMake sure you're using a local server (like Live Server).");
+        }
+    }
+
+    function initLanguageSwitcher() {
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
+        });
+    }
+
+    function initAppLinks() {
+        document.querySelectorAll('[data-app-link]').forEach(el => {
+            el.href = APP_URL;
+        });
+    }
+
+    function toggleFaq(trigger) {
+        const item = trigger.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+
+        document.querySelectorAll('.faq-item').forEach(el => {
+            el.classList.remove('open');
+            const btn = el.querySelector('.faq-trigger');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+            const icon = el.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+
+        if (!isOpen) {
+            item.classList.add('open');
+            trigger.setAttribute('aria-expanded', 'true');
+            item.querySelector('.faq-icon').textContent = '−';
+        }
+    }
+
+    function initFaq() {
+        document.querySelectorAll('.faq-trigger').forEach(btn => {
+            btn.addEventListener('click', () => toggleFaq(btn));
+        });
+    }
+
+    function showFeedback(el, type, message) {
+        el.className = `form-feedback ${type}`;
+        el.textContent = message;
+        setTimeout(() => { el.className = 'form-feedback'; el.textContent = ''; }, 6000);
+    }
+
+    function initContactForm() {
+        const saveBtn = document.getElementById('btn-save-local');
+        const feedback = document.getElementById('form-feedback');
+        if (!saveBtn || !feedback) return;
+
+        saveBtn.addEventListener('click', () => {
+            const name = document.getElementById('contact-name').value.trim();
+            const phone = document.getElementById('contact-phone').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+            const selectedRadio = document.querySelector('input[name="user-type"]:checked');
+            const message = document.getElementById('contact-message').value.trim();
+
+            const lang = localStorage.getItem('language') || 'en';
+            const errorMsg = lang === 'es'
+                ? 'Por favor completa todos los campos requeridos.'
+                : 'Please fill in all required fields.';
+            const radioErrorMsg = lang === 'es'
+                ? 'Por favor selecciona un tipo de usuario.'
+                : 'Please select a user type.';
+            const successMsg = lang === 'es'
+                ? '¡Gracias! Tu mensaje ha sido guardado correctamente.'
+                : 'Thank you! Your message has been saved successfully.';
+
+            if (!name || !phone || !email || !message) {
+                showFeedback(feedback, 'error', errorMsg);
                 return;
             }
-            document.querySelectorAll('[data-i18n]').forEach(element => {
-                const key = element.getAttribute('data-i18n');
-                const text = getNestedValue(translations[language], key);
-                if (text) {
-                    element.innerHTML = text;
-                } else {
-                    console.warn(`Missing translation key: ${key}`);
-                }
-            });
-        }
-
-        function setLanguage(language) {
-            if (!i18nConfig.supportedLanguages.includes(language)) {
-                language = i18nConfig.defaultLanguage;
+            if (!selectedRadio) {
+                showFeedback(feedback, 'error', radioErrorMsg);
+                return;
             }
-            localStorage.setItem('language', language);
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.getAttribute('data-lang') === language);
-            });
-            document.documentElement.lang = language;
-            applyTranslations(language);
-        }
 
-        async function loadTranslations() {
-            try {
-                const cacheBuster = new Date().getTime();
-                const [enResponse, esResponse] = await Promise.all([
-                    fetch(`./i18n/en.json?v=${cacheBuster}`),
-                    fetch(`./i18n/es.json?v=${cacheBuster}`)
-                ]);
-                if (!enResponse.ok || !esResponse.ok) {
-                    throw new Error("JSON files not found");
-                }
-                translations.en = await enResponse.json();
-                translations.es = await esResponse.json();
-                const savedLanguage = localStorage.getItem('language') || i18nConfig.defaultLanguage;
-                setLanguage(savedLanguage);
-            } catch (error) {
-                console.error('Error loading translations:', error);
-                alert("Error loading languages.\n\nMake sure you're using a local server (like Live Server).");
-            }
-        }
+            const userType = selectedRadio.value;
+            const fileContent =
+                `GoldCheck Contact Form Submission\n` +
+                `-----------------------------------\n` +
+                `Full Name: ${name}\n` +
+                `Phone: ${phone}\n` +
+                `Email: ${email}\n` +
+                `User Type: ${userType}\n` +
+                `Message: ${message}\n` +
+                `Timestamp: ${new Date().toLocaleString()}\n`;
 
-        function initLanguageSwitcher() {
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
-            });
-        }
+            const blob = new Blob([fileContent], { type: 'text/plain' });
+            const tempAnchor = document.createElement('a');
+            tempAnchor.href = URL.createObjectURL(blob);
+            tempAnchor.download = 'contacto_goldcheck.txt';
+            document.body.appendChild(tempAnchor);
+            tempAnchor.click();
+            document.body.removeChild(tempAnchor);
+            URL.revokeObjectURL(tempAnchor.href);
 
-        function toggleFaq(item) {
-            const isOpen = item.classList.contains('open');
-            document.querySelectorAll('.faq-item').forEach(el => {
-                el.classList.remove('open');
-                el.querySelector('.faq-icon').textContent = '+';
-            });
-            if (!isOpen) {
-                item.classList.add('open');
-                item.querySelector('.faq-icon').textContent = '−';
-            }
-        }
+            showFeedback(feedback, 'success', successMsg);
 
-        // LÓGICA PARA GUARDAR EN UN ARCHIVO LOCAL AL HACER CLIC
-        function initLocalSave() {
-            const saveBtn = document.getElementById('btn-save-local');
-            if (saveBtn) {
-                saveBtn.addEventListener('click', () => {
-                    const name = document.getElementById('contact-name').value;
-                    const phone = document.getElementById('contact-phone').value;
-                    const email = document.getElementById('contact-email').value;
-                    
-                    const selectedRadio = document.querySelector('input[name="user-type"]:checked');
-                    const userType = selectedRadio ? selectedRadio.value : 'Not specified';
-                    
-                    const message = document.getElementById('contact-message').value;
+            document.getElementById('contact-name').value = '';
+            document.getElementById('contact-phone').value = '';
+            document.getElementById('contact-email').value = '';
+            document.getElementById('contact-message').value = '';
+            if (selectedRadio) selectedRadio.checked = false;
+        });
+    }
 
-                    // Formato del contenido del archivo de texto
-                    const fileContent = `GoldCheck Contact Form Submission\n` +
-                                        `-----------------------------------\n` +
-                                        `Full Name: ${name}\n` +
-                                        `Phone: ${phone}\n` +
-                                        `Email: ${email}\n` +
-                                        `User Type: ${userType}\n` +
-                                        `Message: ${message}\n` +
-                                        `Timestamp: ${new Date().toLocaleString()}\n`;
+    function initPricing() {
+        const tabs = document.querySelectorAll('.segment-tab');
+        const grids = document.querySelectorAll('.pricing-grid');
+        const billingToggle = document.getElementById('billing-toggle');
+        const pricingSection = document.getElementById('pricing');
+        const labelMonthly = document.getElementById('label-monthly');
+        const labelAnnual = document.getElementById('label-annual');
 
-                    // Crear y forzar descarga del archivo local
-                    const blob = new Blob([fileContent], { type: 'text/plain' });
-                    const tempAnchor = document.createElement('a');
-                    tempAnchor.href = URL.createObjectURL(blob);
-                    tempAnchor.download = 'contacto_goldcheck.txt';
-                    document.body.appendChild(tempAnchor);
-                    tempAnchor.click();
-                    document.body.removeChild(tempAnchor);
-                });
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            loadTranslations().then(() => {
-                initLanguageSwitcher();
-                initLocalSave(); // Inicializar la descarga local
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const segment = tab.dataset.segment;
+                tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+                grids.forEach(g => g.classList.remove('active'));
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+                const targetGrid = document.getElementById(`plans-${segment}`);
+                if (targetGrid) targetGrid.classList.add('active');
             });
         });
-    </script>
+
+        if (billingToggle) {
+            billingToggle.addEventListener('change', () => {
+                const isAnnual = billingToggle.checked;
+                pricingSection.classList.toggle('annual-mode', isAnnual);
+                labelMonthly.classList.toggle('active-label', !isAnnual);
+                labelAnnual.classList.toggle('active-label', isAnnual);
+                document.querySelectorAll('.price-num[data-monthly]').forEach(el => {
+                    el.textContent = isAnnual ? el.dataset.annual : el.dataset.monthly;
+                });
+            });
+        }
+    }
+
+    function initScrollAnimations() {
+        const targets = document.querySelectorAll('.card, .mv-row, .faq-item, .section-header, .contact-form, .contact-image');
+
+        // Stagger cards dentro de cada grid
+        document.querySelectorAll('.cards-grid').forEach(grid => {
+            grid.querySelectorAll('.card').forEach((card, i) => {
+                card.style.transitionDelay = `${i * 0.1}s`;
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        targets.forEach(el => {
+            el.classList.add('scroll-animate');
+            observer.observe(el);
+        });
+    }
+
+    function initActiveNav() {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(l => l.classList.remove('nav-active'));
+                    const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('nav-active');
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+
+        sections.forEach(s => observer.observe(s));
+    }
+
+    function initMobileMenu() {
+        const btn = document.getElementById('hamburger-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (!btn || !navLinks) return;
+
+        btn.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            btn.classList.toggle('open', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Cierra el menú al hacer clic en un link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                btn.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
+    function initNavbarScroll() {
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        }, { passive: true });
+    }
+
+    function initBackToTop() {
+        const btn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+        btn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        initAppLinks();
+        initFaq();
+        initPricing();
+        initMobileMenu();
+        initScrollAnimations();
+        initActiveNav();
+        initNavbarScroll();
+        initBackToTop();
+        loadTranslations().then(() => {
+            initLanguageSwitcher();
+            initContactForm();
+        });
+    });
+</script>
 </body>
 </html>

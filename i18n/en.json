@@ -5,8 +5,9 @@
         "home": "Home",
         "about": "About Us",
         "how": "How does it work?",
+        "pricing": "Plans",
         "faq": "FAQs",
-        "contact": "Contact" 
+        "contact": "Contact"
     },
     "cta":{
         "login": "Login",
@@ -27,12 +28,12 @@
     },
     "benefits": {
         "title": "Benefits",
-        "benefit1": "Manage your fleet with ease: GoldCheck provides a user-friendly interface that allows you to monitor and manage the minerals effortlessly, saving you time and resources.",
-        "benefit2": "Enhanced Security: GoldCheck offers advanced security features to protect transport vehicles from unauthorized use.",
-        "benefit3": "Real-time Insights: Get instant access to critical mineral routing data, enabling informed decision-making and proactive management.",
-        "benefit4": "Cost Efficiency: Reduce operational costs through improved fleet management and optimized resource allocation.",
-        "benefit5": "Compliance Assurance: Ensure adherence to industry regulations with comprehensive reporting and documentation capabilities.",
-        "benefit6": "User-Friendly Experience: Enjoy a seamless experience with our intuitive platform designed for ease of use."
+        "benefit1": { "title": "Mineral Management", "desc": "Monitor and manage mineral batches effortlessly through an intuitive interface, saving time and operational resources." },
+        "benefit2": { "title": "Enhanced Security", "desc": "Advanced security features protect transport vehicles and mineral batches from unauthorized access and tampering." },
+        "benefit3": { "title": "Real-time Insights", "desc": "Get instant access to critical mineral routing data, enabling informed decision-making and proactive management." },
+        "benefit4": { "title": "Cost Efficiency", "desc": "Reduce operational costs through smarter fleet management and optimized resource allocation across the supply chain." },
+        "benefit5": { "title": "Compliance Assurance", "desc": "Ensure adherence to industry regulations with comprehensive reporting, documentation and automated audit trails." },
+        "benefit6": { "title": "User-Friendly Experience", "desc": "Enjoy a seamless experience across all devices with our intuitive platform, built for every role in the chain." }
     },
     "telemetrySection":{
         "title": "Where Telemetry and Security Meets",
@@ -60,27 +61,121 @@
     "title": "FAQs",
     "q1": {
         "question": "What is GoldCheck and how does it work?",
-        "answer": "GoldCheck is a smart mineral monitoring platform that uses IoT sensors and telemetry to provide real-time tracking, security alerts, and fleet management from any device."
+        "answer": "GoldCheck is a gold traceability platform that uses IoT sensors and QR certification to track minerals in real time from the mine to the end consumer, ensuring authenticity and transparency across the entire supply chain."
     },
     "q2": {
-        "question": "Is GoldCheck compatible with any type of vehicle?",
-        "answer": "Yes, GoldCheck is compatible with most minerals, with a primary focus on gold."
+        "question": "What type of minerals does GoldCheck support?",
+        "answer": "GoldCheck is primarily focused on gold and precious minerals. Our platform supports the full traceability cycle regardless of the mineral's origin or processing stage."
     },
     "q3": {
         "question": "How secure is my data on the platform?",
         "answer": "We use end-to-end encryption and comply with international data protection regulations. Your data is stored in certified secure servers and is never shared with third parties without your consent."
     },
     "q4": {
-        "question": "Can I manage multiple products at the same time?",
-        "answer": "Absolutely. Our enterprise plan allows you to manage unlimited products from a single dashboard." 
+        "question": "Can I manage multiple products or batches at the same time?",
+        "answer": "Absolutely. Our Gold and Platinum plans allow you to manage large volumes of certified pieces or mineral batches from a single dashboard, with full traceability for each one."
     },
     "q5": {
-        "question": "What happens if the transport vehicle goes to an area without signal?",
-        "answer": "The device stores data locally and syncs automatically once connectivity is restored, ensuring no tracking gaps in the vehicle's transport history."
+        "question": "What happens if the transport vehicle loses signal during transit?",
+        "answer": "The device stores data locally and syncs automatically once connectivity is restored, ensuring no gaps in the mineral's transport history or certification chain."
     }
-    
+
     },
     
+    "pricing": {
+        "title": "Plans & Pricing",
+        "subtitle": "Select your role and find the plan built for you.",
+        "monthly": "Monthly",
+        "annual": "Annual",
+        "save": "-20%",
+        "per_month": "/mo",
+        "forever": "Forever free",
+        "free_label": "Free",
+        "billed_annual": "Billed annually",
+        "custom": "Custom",
+        "badge": { "popular": "Most Popular" },
+        "tab": {
+            "consumer": "Consumers",
+            "jewelry": "Jewelry Stores",
+            "mining": "Mining Companies"
+        },
+        "cta": {
+            "free": "Start Free",
+            "start": "Get Started",
+            "choose": "Choose Plan",
+            "contact": "Contact Sales"
+        },
+        "consumer": {
+            "free": {
+                "name": "Free",
+                "desc": "Discover the gold chain of trust",
+                "f1": "5 QR scans per month",
+                "f2": "Basic certificate view",
+                "f3": "Last 3 verifications history"
+            },
+            "pro": {
+                "name": "Verifier Pro",
+                "desc": "For the conscious gold buyer",
+                "f1": "Unlimited QR scans",
+                "f2": "Full verification history",
+                "f3": "Real-time authenticity alerts",
+                "f4": "Detailed origin & route report",
+                "f5": "Trusted seller directory"
+            }
+        },
+        "jewelry": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Start certifying your jewelry pieces",
+                "f1": "5 certified pieces / month",
+                "f2": "Basic dashboard",
+                "f3": "Email support"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "For growing jewelry businesses",
+                "f1": "50 certified pieces / month",
+                "f2": "Advanced analytics",
+                "f3": "Advanced QR certification",
+                "f4": "Priority support"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Full-scale jewelry enterprise solution",
+                "f1": "Unlimited certified pieces",
+                "f2": "API access",
+                "f3": "Multi-company management",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Dedicated account manager"
+            }
+        },
+        "mining": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Start tracking your mining operations",
+                "f1": "5 batches / month",
+                "f2": "Basic dashboard",
+                "f3": "Email support"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "For growing mining operations",
+                "f1": "50 batches / month",
+                "f2": "Advanced analytics",
+                "f3": "Real-time IoT monitoring",
+                "f4": "Priority support"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Full-scale enterprise mining solution",
+                "f1": "Unlimited batches",
+                "f2": "API access",
+                "f3": "Multi-company management",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Dedicated account manager"
+            }
+        }
+    },
     "contact": {
     "title": "Contact",
     "name": "Full name",

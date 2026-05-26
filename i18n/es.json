@@ -5,8 +5,9 @@
         "home": "Inicio",
         "about": "Quiénes somos",
         "how": "¿Cómo funciona?",
+        "pricing": "Planes",
         "faq": "Preguntas frecuentes",
-        "contact": "Contacto" 
+        "contact": "Contacto"
     },
     "cta":{
         "login": "Iniciar sesión",
@@ -27,12 +28,12 @@
     },
     "benefits": {
         "title": "Ventajas",
-        "benefit1": "Gestiona tu flota con facilidad: GoldCheck ofrece una interfaz intuitiva que te permite supervisar y gestionar los minerales sin esfuerzo, ahorrándote tiempo y recursos.",
-        "benefit2": "Mayor seguridad: GoldCheck ofrece funciones de seguridad avanzadas para proteger los vehículos de transporte contra usos no autorizados.",
-        "benefit3": "Información en tiempo real: Accede al instante a datos esenciales sobre la ruta de los minerales, lo que te permite tomar decisiones fundamentadas y llevar a cabo una gestión proactiva.",
-        "benefit4": "Rentabilidad: Reduzca los costes operativos mediante una mejor gestión de la flota y una asignación optimizada de los recursos.",
-        "benefit5": "Garantía de cumplimiento: Asegura el cumplimiento de la normativa del sector gracias a unas completas funciones de generación de informes y documentación.",
-        "benefit6": "Experiencia intuitiva: disfruta de una experiencia fluida con nuestra plataforma intuitiva, diseñada para facilitar su uso."
+        "benefit1": { "title": "Gestión de Minerales", "desc": "Supervisa y gestiona lotes de minerales sin esfuerzo a través de una interfaz intuitiva, ahorrando tiempo y recursos operativos." },
+        "benefit2": { "title": "Mayor Seguridad", "desc": "Funciones de seguridad avanzadas protegen los vehículos de transporte y los lotes de minerales contra accesos no autorizados." },
+        "benefit3": { "title": "Información en Tiempo Real", "desc": "Accede al instante a datos esenciales sobre la ruta de los minerales para tomar decisiones fundamentadas y una gestión proactiva." },
+        "benefit4": { "title": "Rentabilidad", "desc": "Reduce los costos operativos mediante una gestión más inteligente de la flota y una asignación optimizada de recursos en la cadena." },
+        "benefit5": { "title": "Garantía de Cumplimiento", "desc": "Asegura el cumplimiento normativo con completas funciones de reportes, documentación y auditorías automatizadas." },
+        "benefit6": { "title": "Experiencia Intuitiva", "desc": "Disfruta de una experiencia fluida en todos los dispositivos con nuestra plataforma diseñada para cada rol en la cadena." }
     },
     "telemetrySection":{
         "title": "Donde se unen la telemetría y la seguridad",
@@ -78,6 +79,100 @@
         "answer": "El dispositivo almacena los datos localmente y se sincroniza automáticamente en cuanto se restablece la conexión, lo que garantiza que no haya lagunas en el historial de seguimiento del transporte."
     }
     
+    },
+    "pricing": {
+        "title": "Planes y Precios",
+        "subtitle": "Selecciona tu rol y encuentra el plan que se adapta a ti.",
+        "monthly": "Mensual",
+        "annual": "Anual",
+        "save": "-20%",
+        "per_month": "/mes",
+        "forever": "Gratis para siempre",
+        "free_label": "Gratis",
+        "billed_annual": "Facturado anualmente",
+        "custom": "A medida",
+        "badge": { "popular": "Más Popular" },
+        "tab": {
+            "consumer": "Consumidores",
+            "jewelry": "Joyerías",
+            "mining": "Empresas Mineras"
+        },
+        "cta": {
+            "free": "Empezar Gratis",
+            "start": "Comenzar",
+            "choose": "Elegir Plan",
+            "contact": "Contactar Ventas"
+        },
+        "consumer": {
+            "free": {
+                "name": "Gratuito",
+                "desc": "Descubre la cadena de confianza del oro",
+                "f1": "5 escaneos QR por mes",
+                "f2": "Vista básica del certificado",
+                "f3": "Últimas 3 verificaciones en historial"
+            },
+            "pro": {
+                "name": "Verificador Pro",
+                "desc": "Para el comprador consciente de oro",
+                "f1": "Escaneos QR ilimitados",
+                "f2": "Historial completo de verificaciones",
+                "f3": "Alertas de autenticidad en tiempo real",
+                "f4": "Informe detallado de origen y ruta",
+                "f5": "Directorio de vendedores de confianza"
+            }
+        },
+        "jewelry": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Empieza a certificar tus piezas de joyería",
+                "f1": "5 piezas certificadas / mes",
+                "f2": "Dashboard básico",
+                "f3": "Soporte por email"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "Para joyerías en crecimiento",
+                "f1": "50 piezas certificadas / mes",
+                "f2": "Analytics avanzado",
+                "f3": "Certificación QR avanzada",
+                "f4": "Soporte prioritario"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Solución empresarial completa para joyerías",
+                "f1": "Piezas certificadas ilimitadas",
+                "f2": "Acceso a API",
+                "f3": "Gestión multi-empresa",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Gerente dedicado"
+            }
+        },
+        "mining": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Empieza a rastrear tus operaciones mineras",
+                "f1": "5 lotes / mes",
+                "f2": "Dashboard básico",
+                "f3": "Soporte por email"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "Para operaciones mineras en crecimiento",
+                "f1": "50 lotes / mes",
+                "f2": "Analytics avanzado",
+                "f3": "IoT en tiempo real",
+                "f4": "Soporte prioritario"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Solución empresarial minera completa",
+                "f1": "Lotes ilimitados",
+                "f2": "Acceso a API",
+                "f3": "Gestión multi-empresa",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Gerente dedicado"
+            }
+        }
     },
     "contact": {
     "title": "Contacto",
