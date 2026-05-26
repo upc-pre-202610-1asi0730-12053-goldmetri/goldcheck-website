@@ -28,12 +28,12 @@
     },
     "benefits": {
         "title": "Benefits",
-        "benefit1": "Manage your fleet with ease: GoldCheck provides a user-friendly interface that allows you to monitor and manage the minerals effortlessly, saving you time and resources.",
-        "benefit2": "Enhanced Security: GoldCheck offers advanced security features to protect transport vehicles from unauthorized use.",
-        "benefit3": "Real-time Insights: Get instant access to critical mineral routing data, enabling informed decision-making and proactive management.",
-        "benefit4": "Cost Efficiency: Reduce operational costs through improved fleet management and optimized resource allocation.",
-        "benefit5": "Compliance Assurance: Ensure adherence to industry regulations with comprehensive reporting and documentation capabilities.",
-        "benefit6": "User-Friendly Experience: Enjoy a seamless experience with our intuitive platform designed for ease of use."
+        "benefit1": { "title": "Mineral Management", "desc": "Monitor and manage mineral batches effortlessly through an intuitive interface, saving time and operational resources." },
+        "benefit2": { "title": "Enhanced Security", "desc": "Advanced security features protect transport vehicles and mineral batches from unauthorized access and tampering." },
+        "benefit3": { "title": "Real-time Insights", "desc": "Get instant access to critical mineral routing data, enabling informed decision-making and proactive management." },
+        "benefit4": { "title": "Cost Efficiency", "desc": "Reduce operational costs through smarter fleet management and optimized resource allocation across the supply chain." },
+        "benefit5": { "title": "Compliance Assurance", "desc": "Ensure adherence to industry regulations with comprehensive reporting, documentation and automated audit trails." },
+        "benefit6": { "title": "User-Friendly Experience", "desc": "Enjoy a seamless experience across all devices with our intuitive platform, built for every role in the chain." }
     },
     "telemetrySection":{
         "title": "Where Telemetry and Security Meets",
