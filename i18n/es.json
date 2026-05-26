@@ -5,8 +5,9 @@
         "home": "Inicio",
         "about": "Quiénes somos",
         "how": "¿Cómo funciona?",
+        "pricing": "Planes",
         "faq": "Preguntas frecuentes",
-        "contact": "Contacto" 
+        "contact": "Contacto"
     },
     "cta":{
         "login": "Iniciar sesión",
@@ -78,6 +79,100 @@
         "answer": "El dispositivo almacena los datos localmente y se sincroniza automáticamente en cuanto se restablece la conexión, lo que garantiza que no haya lagunas en el historial de seguimiento del transporte."
     }
     
+    },
+    "pricing": {
+        "title": "Planes y Precios",
+        "subtitle": "Selecciona tu rol y encuentra el plan que se adapta a ti.",
+        "monthly": "Mensual",
+        "annual": "Anual",
+        "save": "-20%",
+        "per_month": "/mes",
+        "forever": "Gratis para siempre",
+        "free_label": "Gratis",
+        "billed_annual": "Facturado anualmente",
+        "custom": "A medida",
+        "badge": { "popular": "Más Popular" },
+        "tab": {
+            "consumer": "Consumidores",
+            "jewelry": "Joyerías",
+            "mining": "Empresas Mineras"
+        },
+        "cta": {
+            "free": "Empezar Gratis",
+            "start": "Comenzar",
+            "choose": "Elegir Plan",
+            "contact": "Contactar Ventas"
+        },
+        "consumer": {
+            "free": {
+                "name": "Gratuito",
+                "desc": "Descubre la cadena de confianza del oro",
+                "f1": "5 escaneos QR por mes",
+                "f2": "Vista básica del certificado",
+                "f3": "Últimas 3 verificaciones en historial"
+            },
+            "pro": {
+                "name": "Verificador Pro",
+                "desc": "Para el comprador consciente de oro",
+                "f1": "Escaneos QR ilimitados",
+                "f2": "Historial completo de verificaciones",
+                "f3": "Alertas de autenticidad en tiempo real",
+                "f4": "Informe detallado de origen y ruta",
+                "f5": "Directorio de vendedores de confianza"
+            }
+        },
+        "jewelry": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Empieza a certificar tus piezas de joyería",
+                "f1": "5 piezas certificadas / mes",
+                "f2": "Dashboard básico",
+                "f3": "Soporte por email"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "Para joyerías en crecimiento",
+                "f1": "50 piezas certificadas / mes",
+                "f2": "Analytics avanzado",
+                "f3": "Certificación QR avanzada",
+                "f4": "Soporte prioritario"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Solución empresarial completa para joyerías",
+                "f1": "Piezas certificadas ilimitadas",
+                "f2": "Acceso a API",
+                "f3": "Gestión multi-empresa",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Gerente dedicado"
+            }
+        },
+        "mining": {
+            "bronze": {
+                "name": "Bronze",
+                "desc": "Empieza a rastrear tus operaciones mineras",
+                "f1": "5 lotes / mes",
+                "f2": "Dashboard básico",
+                "f3": "Soporte por email"
+            },
+            "gold": {
+                "name": "Gold",
+                "desc": "Para operaciones mineras en crecimiento",
+                "f1": "50 lotes / mes",
+                "f2": "Analytics avanzado",
+                "f3": "IoT en tiempo real",
+                "f4": "Soporte prioritario"
+            },
+            "platinum": {
+                "name": "Platinum",
+                "desc": "Solución empresarial minera completa",
+                "f1": "Lotes ilimitados",
+                "f2": "Acceso a API",
+                "f3": "Gestión multi-empresa",
+                "f4": "SLA 99.9% uptime",
+                "f5": "Gerente dedicado"
+            }
+        }
     },
     "contact": {
     "title": "Contacto",
