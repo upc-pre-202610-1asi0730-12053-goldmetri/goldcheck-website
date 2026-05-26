@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoldCheck - The chain of trust</title>
+    <title>GoldCheck – The Chain of Trust</title>
+    <meta name="description" content="GoldCheck is a gold traceability platform connecting miners, jewelry stores and consumers through IoT telemetry, QR certification and transparent supply chain tracking.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GoldCheck – The Chain of Trust">
+    <meta property="og:description" content="Track, certify and verify gold from mine to consumer. Connecting miners, jewelers and buyers with transparent, verifiable data.">
+    <meta property="og:image" content="assets/images/aesthetic-cover-photo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GoldCheck – The Chain of Trust">
+    <meta name="twitter:description" content="Track, certify and verify gold from mine to consumer.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,6 +35,11 @@
         <li><a href="#faq" data-i18n="headers.faq">FAQs</a></li>
         <li><a href="#contact" data-i18n="headers.contact">Contact</a></li>
     </ul>
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     <div class="nav-actions">
         <div class="language-switcher">
             <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
@@ -673,10 +692,32 @@
         }
     }
 
+    function initMobileMenu() {
+        const btn = document.getElementById('hamburger-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (!btn || !navLinks) return;
+
+        btn.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            btn.classList.toggle('open', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Cierra el menú al hacer clic en un link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                btn.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
         initAppLinks();
         initFaq();
         initPricing();
+        initMobileMenu();
         loadTranslations().then(() => {
             initLanguageSwitcher();
             initContactForm();
