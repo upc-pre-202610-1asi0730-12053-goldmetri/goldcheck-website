@@ -562,7 +562,8 @@ textarea.form-control {
 }
 
 .footer-logo {
-  max-width: 180px;
+  max-width: 240px;
+  mix-blend-mode: multiply;
 }
 
 .footer-tagline {
@@ -570,7 +571,9 @@ textarea.form-control {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-primary-gold);
+  color: var(--color-dark-text);
+  opacity: 0.65;
+  text-align: center;
 }
 
 .footer-nav ul {
