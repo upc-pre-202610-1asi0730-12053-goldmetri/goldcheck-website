@@ -109,6 +109,12 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  padding: 0.7rem 5%;
 }
 
 .nav-logo img {
@@ -505,35 +511,68 @@ textarea.form-control {
   line-height: 1;
   flex-shrink: 0;
   margin-left: 1rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
+  display: inline-block;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
 }
 
 .faq-answer {
-  display: none;
-  padding: 0 2rem 1.2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 2rem;
   font-weight: 400;
   font-size: 0.95rem;
   color: var(--color-dark-text);
-  border-top: 1px solid rgba(0,0,0,0.15);
   line-height: 1.7;
 }
 
 .faq-item.open .faq-answer {
-  display: block;
+  max-height: 300px;
+  padding: 0 2rem 1.2rem;
+  border-top: 1px solid rgba(0,0,0,0.15);
 }
 
-/* Card icon */
-.card-icon {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 1rem;
-  color: var(--color-dark-text);
-  opacity: 0.75;
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-primary-gold);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(197, 160, 89, 0.4);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  pointer-events: none;
+  z-index: 200;
 }
 
-.card-icon svg {
-  width: 100%;
-  height: 100%;
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background-color: #d4ae6a;
+  box-shadow: 0 6px 22px rgba(197, 160, 89, 0.55);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* Scroll animations */
