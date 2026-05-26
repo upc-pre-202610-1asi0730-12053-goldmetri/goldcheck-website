@@ -1050,6 +1050,10 @@ textarea.form-control {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .navbar {
     position: relative;
     flex-wrap: wrap;
@@ -1108,4 +1112,5 @@ textarea.form-control {
   .segment-tabs { justify-content: flex-start; }
   .segment-tab { padding: 0.8rem 1.2rem; font-size: 0.75rem; }
   .cards-grid-3 { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
 }
