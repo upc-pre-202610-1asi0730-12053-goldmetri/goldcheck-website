@@ -34,8 +34,37 @@ Landing page institucional para **GoldCheck**, plataforma de seguridad vehicular
 | Benefits | — | Grid de 6 tarjetas |
 | Telemetry | `#how` | Descripción técnica con imagen |
 | How it works | `#how-works` | Segmentos por tipo de usuario |
+| Plans & Pricing | `#pricing` | Planes de suscripción por segmento |
 | Contact | `#contact` | Formulario con radio buttons |
 | FAQ | `#faq` | Accordion interactivo |
+
+---
+
+## Planes de suscripción
+
+La sección `#pricing` muestra los planes organizados por segmento objetivo mediante tabs interactivos. Incluye un toggle de facturación mensual/anual con descuento del 20%.
+
+### Consumidores
+| Plan | Precio | Features principales |
+|---|---|---|
+| Free | $0 | 5 escaneos QR/mes · Certificado básico · Historial últimas 3 |
+| Verifier Pro | $9/mo | Escaneos ilimitados · Historial completo · Alertas · Informe de origen |
+
+### Joyerías
+| Plan | Precio | Features principales |
+|---|---|---|
+| Bronze | $0 | 5 piezas/mes · Dashboard básico · Soporte email |
+| Gold ⭐ | $49/mo | 50 piezas/mes · Analytics avanzado · Certificación QR · Soporte prioritario |
+| Platinum | $129/mo | Piezas ilimitadas · API access · Multi-empresa · SLA 99.9% · Gerente dedicado |
+
+### Empresas Mineras
+| Plan | Precio | Features principales |
+|---|---|---|
+| Bronze | $0 | 5 lotes/mes · Dashboard básico · Soporte email |
+| Gold ⭐ | $49/mo | 50 lotes/mes · Analytics avanzado · IoT tiempo real · Soporte prioritario |
+| Platinum | $129/mo | Lotes ilimitados · API access · Multi-empresa · SLA 99.9% · Gerente dedicado |
+
+> Los precios anuales aplican un descuento del 20% (Gold → $39/mo · Platinum → $103/mo).
 
 ---
 
