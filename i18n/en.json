@@ -82,6 +82,14 @@
 
     },
     
+    "aboutProduct": {
+        "title": "About The Product",
+        "description": "Discover how GoldCheck transforms mineral tracking and verification through cutting-edge technology."
+    },
+    "aboutTeam": {
+        "title": "About The Team",
+        "description": "Meet the passionate team behind GoldCheck and learn about the vision driving our innovation."
+    },
     "pricing": {
         "title": "Plans & Pricing",
         "subtitle": "Select your role and find the plan built for you.",
