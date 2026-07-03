@@ -1,108 +1,150 @@
 # GoldCheck - The Chain of Trust
 
-Landing page institucional para **GoldCheck**, plataforma de seguridad vehicular inteligente basada en telemetría e IoT.
+Institutional landing page for **GoldCheck**, a gold traceability platform that connects
+miners, jewelry stores and consumers through IoT telemetry, QR certification and transparent
+supply-chain tracking.
 
 ---
 
-## Estructura del proyecto
+## Project structure
 
 ```
-📁 goldcheck/
-├── index.html                  # Página principal
-├── style.css                   # Estilos globales
-├── README.md                   # Este archivo
+📁 goldcheck-website/
+├── index.html                  # Main page (markup + vanilla JS)
+├── style.css                   # Global styles
+├── README.md                   # This file
 ├── assets/
 │   └── images/
 │       ├── goldmetrics-logo.png
-│       ├── aesthetic-cover-photo.png   # Fondo del hero
-│       ├── mission.jpg
-│       ├── vision.jpg
-│       └── telemetry.jpg
+│       ├── favicon.svg
+│       ├── aesthetic-cover-photo.png   # Hero background
+│       ├── mission-cover.png           # Mission section
+│       ├── vision.png                  # Vision section
+│       ├── jewerly.png                 # Telemetry section
+│       ├── user-1-anthony.jpeg         # Testimonial – mining user
+│       ├── user-2-yesiliany.jpeg       # Testimonial – jewelry user
+│       └── user-3-carla.jpeg           # Testimonial – final consumer
 └── i18n/
-    ├── en.json                 # Traducciones en inglés
-    └── es.json                 # Traducciones en español
+    ├── en.json                 # English translations
+    └── es.json                 # Spanish translations
 ```
 
 ---
 
-## Secciones
+## Sections
 
-| Sección | ID | Descripción |
+| Section | ID | Description |
 |---|---|---|
-| Hero | `#home` | Imagen de fondo con tagline y CTA |
-| Mission & Vision | `#about` | Filas alternadas con imagen y texto |
-| Benefits | — | Grid de 6 tarjetas |
-| Telemetry | `#how` | Descripción técnica con imagen |
-| How it works | `#how-works` | Segmentos por tipo de usuario |
-| Plans & Pricing | `#pricing` | Planes de suscripción por segmento |
-| Contact | `#contact` | Formulario con radio buttons |
-| FAQ | `#faq` | Accordion interactivo |
+| Hero | `#home` | Background image with tagline and CTA |
+| Mission & Vision | `#about` | Alternating rows with image and text |
+| Benefits | — | Grid of 6 cards |
+| Telemetry | `#how` | Technical description with image |
+| How it works | `#how-works` | Segments by user type |
+| Videos | `#videos` | Embedded YouTube videos ("About the Team" and "About the Product") |
+| Success Stories | `#testimonials` | Testimonials carousel with navigation controls |
+| Plans & Pricing | `#pricing` | Subscription plans per segment |
+| FAQ | `#faq` | Interactive accordion |
+| Contact | `#contact` | Form with field-level validation |
 
 ---
 
-## Planes de suscripción
+## Key features & interactivity
 
-La sección `#pricing` muestra los planes organizados por segmento objetivo mediante tabs interactivos. Incluye un toggle de facturación mensual/anual con descuento del 20%.
-
-### Consumidores
-| Plan | Precio | Features principales |
-|---|---|---|
-| Free | $0 | 5 escaneos QR/mes · Certificado básico · Historial últimas 3 |
-| Verifier Pro | $9/mo | Escaneos ilimitados · Historial completo · Alertas · Informe de origen |
-
-### Joyerías
-| Plan | Precio | Features principales |
-|---|---|---|
-| Bronze | $0 | 5 piezas/mes · Dashboard básico · Soporte email |
-| Gold ⭐ | $49/mo | 50 piezas/mes · Analytics avanzado · Certificación QR · Soporte prioritario |
-| Platinum | $129/mo | Piezas ilimitadas · API access · Multi-empresa · SLA 99.9% · Gerente dedicado |
-
-### Empresas Mineras
-| Plan | Precio | Features principales |
-|---|---|---|
-| Bronze | $0 | 5 lotes/mes · Dashboard básico · Soporte email |
-| Gold ⭐ | $49/mo | 50 lotes/mes · Analytics avanzado · IoT tiempo real · Soporte prioritario |
-| Platinum | $129/mo | Lotes ilimitados · API access · Multi-empresa · SLA 99.9% · Gerente dedicado |
-
-> Los precios anuales aplican un descuento del 20% (Gold → $39/mo · Platinum → $103/mo).
+- **Responsive navigation** — below 992px the header collapses into a hamburger menu that groups
+  the nav links, the language switcher and the auth buttons, keeping the top bar clean on mobile.
+- **Videos section** — responsive 16:9 YouTube embeds (privacy-friendly `youtube-nocookie`,
+  lazy-loaded) that stack on mobile and sit side by side on desktop.
+- **Success Stories carousel** — accessible testimonials slider with previous/next arrows and
+  dot controls (wrap-around), showing a photo, name and role for each customer.
+- **Contact form validation** — field-level validation that highlights and focuses the first
+  invalid field, shows a specific localized message, validates the email format, and clears the
+  error as soon as the user edits the field.
+- **Auth CTAs** — "Login" links to the app's `/#/auth/login` route and the sign-up / hero / plan
+  CTAs link to `/#/auth/register` (configured via the `data-app-link` attribute).
+- **Internationalization** — English/Spanish switch with a lightweight custom i18n system.
+- **Extras** — scroll-reveal animations (respecting `prefers-reduced-motion`), sticky navbar with
+  scroll state, active-section highlighting and a back-to-top button.
 
 ---
 
-## Cómo correr el proyecto
+## Subscription plans
 
-Este proyecto usa `fetch()` para cargar los archivos de traducción, por lo que **no se puede abrir directamente como archivo HTML**. Necesitas un servidor local.
+The `#pricing` section shows the plans grouped by target segment via interactive tabs. It includes
+a monthly/annual billing toggle with a 20% discount.
 
-### Opción 1 — Live Server (VS Code)
-1. Instala la extensión **Live Server** en VS Code
-2. Click derecho en `index.html` → **Open with Live Server**
+### Consumers
+| Plan | Price | Main features |
+|---|---|---|
+| Free | $0 | 5 QR scans/month · Basic certificate · Last 3 verifications |
+| Verifier Pro | $9/mo | Unlimited scans · Full history · Alerts · Origin report |
 
-### Opción 2 — Python
+### Jewelry Stores
+| Plan | Price | Main features |
+|---|---|---|
+| Bronze | $0 | 5 pieces/month · Basic dashboard · Email support |
+| Gold ⭐ | $49/mo | 50 pieces/month · Advanced analytics · QR certification · Priority support |
+| Platinum | $129/mo | Unlimited pieces · API access · Multi-company · SLA 99.9% · Dedicated manager |
+
+### Mining Companies
+| Plan | Price | Main features |
+|---|---|---|
+| Bronze | $0 | 5 batches/month · Basic dashboard · Email support |
+| Gold ⭐ | $49/mo | 50 batches/month · Advanced analytics · Real-time IoT · Priority support |
+| Platinum | $129/mo | Unlimited batches · API access · Multi-company · SLA 99.9% · Dedicated manager |
+
+> Annual pricing applies a 20% discount (Gold → $39/mo · Platinum → $103/mo).
+
+---
+
+## Running the project
+
+This project uses `fetch()` to load the translation files, so it **cannot be opened directly as an
+HTML file**. You need a local server.
+
+### Option 1 — Live Server (VS Code)
+1. Install the **Live Server** extension in VS Code
+2. Right-click `index.html` → **Open with Live Server**
+
+### Option 2 — Python
 ```bash
 python -m http.server 5500
 ```
-Luego abre `http://localhost:5500`
+Then open `http://localhost:5500`
 
-### Opción 3 — Node.js
+### Option 3 — Node.js
 ```bash
 npx serve .
 ```
 
 ---
 
-## Internacionalización (i18n)
+## Internationalization (i18n)
 
-El sitio soporta **inglés** y **español**. Las traducciones están en `i18n/en.json` y `i18n/es.json`.
+The site supports **English** and **Spanish**. Translations live in `i18n/en.json` and
+`i18n/es.json`.
 
-Para agregar una nueva clave:
-1. Agrega la clave en ambos archivos JSON con la misma estructura
-2. Usa `data-i18n="tu.clave"` en el elemento HTML correspondiente
+To add a new key:
+1. Add the key in both JSON files with the same structure
+2. Use `data-i18n="your.key"` on the corresponding HTML element
 
 ---
 
-## Personalización
+## Customization
 
-### Colores
-Las variables CSS están definidas en `:root` dentro de `style.css`:
+### App URL & routes
+The external web-app URL and its auth routes are defined at the top of the `<script>` in
+`index.html`:
+
+```js
+const APP_URL = 'https://goldcheck-goldmetrics.netlify.app';
+const APP_ROUTES = {
+  login: '/#/auth/login',
+  register: '/#/auth/register'
+};
+```
+
+### Colors
+CSS variables are defined in `:root` inside `style.css`:
 
 ```css
 --color-primary-dark: #2A2A2A;
@@ -112,34 +154,34 @@ Las variables CSS están definidas en `:root` dentro de `style.css`:
 --color-dark-text: #1A1A1A;
 ```
 
-### Imagen de fondo del Hero
-Reemplaza el archivo en `assets/images/aesthetic-cover-photo.png` o actualiza la ruta en `style.css`:
+### Hero background image
+Replace `assets/images/aesthetic-cover-photo.png` or update the path in `style.css`:
 
 ```css
 .hero-section {
-  background: linear-gradient(...), url('assets/images/tu-imagen.png');
+  background: linear-gradient(...), url('assets/images/your-image.png');
 }
 ```
 
 ---
 
-## Tecnologías
+## Tech stack
 
-- HTML5 semántico
-- CSS3 con variables y Flexbox
-- JavaScript vanilla (sin frameworks)
-- Sistema i18n propio con archivos JSON
+- Semantic HTML5
+- CSS3 with variables, Flexbox and Grid
+- Vanilla JavaScript (no frameworks)
+- Custom i18n system with JSON files
 
 ---
 
-## Commits convencionales
+## Conventional commits
 
-Este proyecto sigue la convención [Conventional Commits](https://www.conventionalcommits.org/):
+This project follows the [Conventional Commits](https://www.conventionalcommits.org/) convention:
 
-- `feat:` nueva funcionalidad
-- `fix:` corrección de bug o problema visual
-- `refactor:` reorganización de código sin cambiar comportamiento
-- `docs:` cambios en documentación
+- `feat:` new feature
+- `fix:` bug or visual fix
+- `refactor:` code reorganization without behavior changes
+- `docs:` documentation changes
 
 ---
 
