@@ -52,10 +52,10 @@
             <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">ES</button>
         </div>
 
-        <a data-app-link href="#">
+        <a data-app-link="login" href="#">
             <button class="btn btn-gold" data-i18n="cta.login">Login</button>
         </a>
-        <a data-app-link href="#">
+        <a data-app-link="register" href="#">
             <button class="btn btn-light" data-i18n="cta.signup">Sign Up</button>
         </a>
     </div>
@@ -681,6 +681,12 @@
     // App external URL — update here if the deployment URL changes
     const APP_URL = 'https://goldcheck-goldmetrics.netlify.app';
 
+    // App routes (hash-based) — mapped from the [data-app-link] value
+    const APP_ROUTES = {
+        login: '/#/auth/login',
+        register: '/#/auth/register'
+    };
+
     // i18n Configuration
     const i18nConfig = {
         defaultLanguage: 'en',
@@ -750,7 +756,9 @@
 
     function initAppLinks() {
         document.querySelectorAll('[data-app-link]').forEach(el => {
-            el.href = APP_URL;
+            // Default to the registration route unless the link is explicitly "login"
+            const target = el.getAttribute('data-app-link') === 'login' ? 'login' : 'register';
+            el.href = APP_URL + APP_ROUTES[target];
         });
     }
 
