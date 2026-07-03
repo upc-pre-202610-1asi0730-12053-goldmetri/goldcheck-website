@@ -59,6 +59,9 @@
         "subtitle": "Mira nuestra historia y descubre cómo GoldCheck aporta confianza a la cadena del oro.",
         "team": {
             "caption": "Conoce al Equipo"
+        },
+        "product": {
+            "caption": "Sobre el Producto"
         }
     },
     "rights":{
