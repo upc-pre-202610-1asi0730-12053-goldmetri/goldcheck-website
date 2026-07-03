@@ -1143,6 +1143,173 @@ textarea.form-control {
   }
 }
 
+/* =====================
+   TESTIMONIALS SECTION
+   ===================== */
+
+.testimonials-subtitle {
+  text-align: center;
+  color: #AAAAAA;
+  font-size: 1rem;
+  margin-top: -2.5rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.02em;
+}
+
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonial-track-wrap {
+  flex: 1;
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-track { transition: none; }
+}
+
+.testimonial-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.testimonial-card {
+  background: linear-gradient(150deg, #333029 0%, #2c2620 55%, #333029 100%);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  min-height: 260px;
+}
+
+.testimonial-quote {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 4rem;
+  line-height: 0.2;
+  height: 1.5rem;
+  color: var(--color-primary-gold);
+  opacity: 0.55;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #E4E4E4;
+  font-style: italic;
+  flex: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-primary-gold);
+  flex-shrink: 0;
+}
+
+.testimonial-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: var(--color-secondary-gold);
+  letter-spacing: 0.02em;
+}
+
+.testimonial-role {
+  font-size: 0.85rem;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Carousel controls */
+.carousel-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(197, 160, 89, 0.5);
+  color: var(--color-primary-gold);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.carousel-btn:hover {
+  background-color: var(--color-primary-gold);
+  color: var(--color-dark-text);
+  transform: scale(1.08);
+}
+
+.carousel-btn:focus-visible {
+  outline: 2px solid var(--color-primary-gold);
+  outline-offset: 3px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(197, 160, 89, 0.3);
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
+}
+
+.carousel-dot.active {
+  background-color: var(--color-primary-gold);
+  width: 26px;
+  border-radius: 5px;
+}
+
+.carousel-dot:focus-visible {
+  outline: 2px solid var(--color-primary-gold);
+  outline-offset: 2px;
+}
+
 /* Hamburger button */
 .hamburger {
   display: none;
@@ -1275,4 +1442,10 @@ textarea.form-control {
   .segment-tab { padding: 0.8rem 1.2rem; font-size: 0.75rem; }
   .cards-grid-3 { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
+
+  .testimonial-carousel { gap: 0.5rem; }
+  .testimonial-card { padding: 1.75rem 1.5rem; min-height: 300px; }
+  .testimonial-text { font-size: 0.98rem; }
+  .carousel-btn { width: 40px; height: 40px; }
+  .carousel-btn svg { width: 18px; height: 18px; }
 }

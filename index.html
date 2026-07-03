@@ -36,6 +36,7 @@
         <li><a href="#about" data-i18n="headers.about">About Us</a></li>
         <li><a href="#how" data-i18n="headers.how">How does it work?</a></li>
         <li><a href="#videos" data-i18n="headers.videos">Videos</a></li>
+        <li><a href="#testimonials" data-i18n="headers.testimonials">Testimonials</a></li>
         <li><a href="#pricing" data-i18n="headers.pricing">Plans</a></li>
         <li><a href="#faq" data-i18n="headers.faq">FAQs</a></li>
         <li><a href="#contact" data-i18n="headers.contact">Contact</a></li>
@@ -229,6 +230,74 @@
             <figcaption class="video-caption" data-i18n="videos.product.caption">About the Product</figcaption>
         </figure>
     </div>
+</section>
+
+<!-- Testimonials / Success Stories Section -->
+<section class="section-padding testimonials-section" id="testimonials">
+    <div class="section-header">
+        <h2 data-i18n="testimonials.title">Success Stories</h2>
+    </div>
+    <p class="testimonials-subtitle" data-i18n="testimonials.subtitle">Real experiences from those who trust GoldCheck across the gold chain.</p>
+
+    <div class="testimonial-carousel">
+        <button class="carousel-btn carousel-prev" id="testimonial-prev" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+
+        <div class="testimonial-track-wrap">
+            <ul class="testimonial-track" id="testimonial-track">
+                <li class="testimonial-slide">
+                    <blockquote class="testimonial-card">
+                        <span class="testimonial-quote" aria-hidden="true">&ldquo;</span>
+                        <p class="testimonial-text" data-i18n="testimonials.t1.text">Before, we had to manually track every batch from the mine to the refinery. With GoldCheck I have real-time visibility of the whole fleet, I get automatic alerts whenever there is an anomaly, and if an incident happens I log it in seconds. Now I can show my clients exactly where every gram of gold we extract comes from.</p>
+                        <footer class="testimonial-author">
+                            <img class="testimonial-avatar" src="assets/images/user-1-anthony.jpeg" alt="Anthony Paredes" loading="lazy" width="60" height="60">
+                            <span class="testimonial-meta">
+                                <span class="testimonial-name" data-i18n="testimonials.t1.name">Anthony Paredes</span>
+                                <span class="testimonial-role" data-i18n="testimonials.t1.role">Mining User</span>
+                            </span>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li class="testimonial-slide">
+                    <blockquote class="testimonial-card">
+                        <span class="testimonial-quote" aria-hidden="true">&ldquo;</span>
+                        <p class="testimonial-text" data-i18n="testimonials.t2.text">Before, when a customer asked about the origin of the gold, I had no way to prove it. Now they scan the code on the piece and see the whole chain: which mine it came from, how it was transported, whether it is conflict-free. That sets me apart from the competition and builds real trust with my customers.</p>
+                        <footer class="testimonial-author">
+                            <img class="testimonial-avatar" src="assets/images/user-2-yesiliany.jpeg" alt="Yesiliany Canchica" loading="lazy" width="60" height="60">
+                            <span class="testimonial-meta">
+                                <span class="testimonial-name" data-i18n="testimonials.t2.name">Yesiliany Canchica</span>
+                                <span class="testimonial-role" data-i18n="testimonials.t2.role">Jewelry Store Owner</span>
+                            </span>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li class="testimonial-slide">
+                    <blockquote class="testimonial-card">
+                        <span class="testimonial-quote" aria-hidden="true">&ldquo;</span>
+                        <p class="testimonial-text" data-i18n="testimonials.t3.text">I was always worried about not really knowing where the gold in the jewelry I bought came from. With GoldCheck that changed: I went into the platform, searched for the product and could see the mineral's full history, from extraction to the jewelry store. Knowing the gold is ethical and conflict-free gives me a peace of mind I did not have before.</p>
+                        <footer class="testimonial-author">
+                            <img class="testimonial-avatar" src="assets/images/user-3-carla.jpeg" alt="Carla Gallardo" loading="lazy" width="60" height="60">
+                            <span class="testimonial-meta">
+                                <span class="testimonial-name" data-i18n="testimonials.t3.name">Carla Gallardo</span>
+                                <span class="testimonial-role" data-i18n="testimonials.t3.role">Final Consumer</span>
+                            </span>
+                        </footer>
+                    </blockquote>
+                </li>
+            </ul>
+        </div>
+
+        <button class="carousel-btn carousel-next" id="testimonial-next" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="carousel-dots" id="testimonial-dots" role="tablist" aria-label="Select testimonial"></div>
 </section>
 
 <!-- Pricing / Subscriptions Section -->
@@ -579,6 +648,7 @@
                 <li><a href="#about" data-i18n="headers.about">About Us</a></li>
                 <li><a href="#how" data-i18n="headers.how">How does it work?</a></li>
                 <li><a href="#videos" data-i18n="headers.videos">Videos</a></li>
+                <li><a href="#testimonials" data-i18n="headers.testimonials">Testimonials</a></li>
                 <li><a href="#pricing" data-i18n="headers.pricing">Plans</a></li>
                 <li><a href="#faq" data-i18n="headers.faq">FAQs</a></li>
                 <li><a href="#contact" data-i18n="headers.contact">Contact</a></li>
@@ -810,8 +880,45 @@
         }
     }
 
+    function initTestimonials() {
+        const track = document.getElementById('testimonial-track');
+        const prevBtn = document.getElementById('testimonial-prev');
+        const nextBtn = document.getElementById('testimonial-next');
+        const dotsWrap = document.getElementById('testimonial-dots');
+        if (!track || !prevBtn || !nextBtn || !dotsWrap) return;
+
+        const slides = track.querySelectorAll('.testimonial-slide');
+        const total = slides.length;
+        let current = 0;
+
+        // Build navigation dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('role', 'tab');
+            dot.setAttribute('aria-label', `Testimonial ${i + 1}`);
+            dot.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+            dot.addEventListener('click', () => goTo(i));
+            dotsWrap.appendChild(dot);
+        });
+        const dots = dotsWrap.querySelectorAll('.carousel-dot');
+
+        function goTo(index) {
+            current = (index + total) % total;
+            track.style.transform = `translateX(-${current * 100}%)`;
+            dots.forEach((d, i) => {
+                const isActive = i === current;
+                d.classList.toggle('active', isActive);
+                d.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+        }
+
+        prevBtn.addEventListener('click', () => goTo(current - 1));
+        nextBtn.addEventListener('click', () => goTo(current + 1));
+    }
+
     function initScrollAnimations() {
-        const targets = document.querySelectorAll('.card, .mv-row, .faq-item, .section-header, .contact-form, .contact-image, .video-card');
+        const targets = document.querySelectorAll('.card, .mv-row, .faq-item, .section-header, .contact-form, .contact-image, .video-card, .testimonial-carousel');
 
         // Stagger cards dentro de cada grid
         document.querySelectorAll('.cards-grid').forEach(grid => {
@@ -899,6 +1006,7 @@
         initAppLinks();
         initFaq();
         initPricing();
+        initTestimonials();
         initMobileMenu();
         initScrollAnimations();
         initActiveNav();

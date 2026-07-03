@@ -6,6 +6,7 @@
         "about": "About Us",
         "how": "How does it work?",
         "videos": "Videos",
+        "testimonials": "Testimonials",
         "pricing": "Plans",
         "faq": "FAQs",
         "contact": "Contact"
@@ -62,6 +63,25 @@
         },
         "product": {
             "caption": "About the Product"
+        }
+    },
+    "testimonials": {
+        "title": "Success Stories",
+        "subtitle": "Real experiences from those who trust GoldCheck across the gold chain.",
+        "t1": {
+            "text": "Before, we had to manually track every batch from the mine to the refinery. With GoldCheck I have real-time visibility of the whole fleet, I get automatic alerts whenever there is an anomaly, and if an incident happens I log it in seconds. Now I can show my clients exactly where every gram of gold we extract comes from.",
+            "name": "Anthony Paredes",
+            "role": "Mining User"
+        },
+        "t2": {
+            "text": "Before, when a customer asked about the origin of the gold, I had no way to prove it. Now they scan the code on the piece and see the whole chain: which mine it came from, how it was transported, whether it is conflict-free. That sets me apart from the competition and builds real trust with my customers.",
+            "name": "Yesiliany Canchica",
+            "role": "Jewelry Store Owner"
+        },
+        "t3": {
+            "text": "I was always worried about not really knowing where the gold in the jewelry I bought came from. With GoldCheck that changed: I went into the platform, searched for the product and could see the mineral's full history, from extraction to the jewelry store. Knowing the gold is ethical and conflict-free gives me a peace of mind I did not have before.",
+            "name": "Carla Gallardo",
+            "role": "Final Consumer"
         }
     },
     "rights":{

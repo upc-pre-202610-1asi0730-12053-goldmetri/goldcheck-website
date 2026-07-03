@@ -6,6 +6,7 @@
         "about": "Quiénes somos",
         "how": "¿Cómo funciona?",
         "videos": "Videos",
+        "testimonials": "Casos de éxito",
         "pricing": "Planes",
         "faq": "Preguntas frecuentes",
         "contact": "Contacto"
@@ -62,6 +63,25 @@
         },
         "product": {
             "caption": "Sobre el Producto"
+        }
+    },
+    "testimonials": {
+        "title": "Casos de éxito",
+        "subtitle": "Experiencias reales de quienes confían en GoldCheck en toda la cadena del oro.",
+        "t1": {
+            "text": "Antes teníamos que hacer seguimiento manual de cada lote desde la mina hasta la refinería. Con GoldCheck tengo visibilidad en tiempo real de toda la flota, recibo alertas automáticas cuando hay una anomalía, y si ocurre un incidente lo registro en segundos. Ahora puedo demostrarle a mis clientes exactamente de dónde viene cada gramo de oro que extraemos.",
+            "name": "Anthony Paredes",
+            "role": "Usuario Minero"
+        },
+        "t2": {
+            "text": "Antes, cuando un cliente me preguntaba por el origen del oro, no tenía cómo demostrarlo. Ahora escanean el código de la joya y ven toda la cadena: desde qué mina vino, cómo fue transportado y si está libre de conflicto. Eso me diferencia de la competencia y genera confianza real en mis clientes.",
+            "name": "Yesiliany Canchica",
+            "role": "Usuaria Joyera"
+        },
+        "t3": {
+            "text": "Siempre me preocupó no saber de dónde venía realmente el oro de las joyas que compraba. Con GoldCheck eso cambió: entré a la plataforma, busqué el producto y pude ver todo el historial del mineral, desde su extracción hasta la joyería. Saber que el oro es ético y libre de conflicto me da una tranquilidad que antes no tenía.",
+            "name": "Carla Gallardo",
+            "role": "Consumidora Final"
         }
     },
     "rights":{
