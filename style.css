@@ -1190,8 +1190,14 @@ textarea.form-control {
     flex-wrap: wrap;
   }
 
+  /* Barra superior en móvil: solo logo, marca y hamburguesa */
+  .nav-logo { order: 1; }
+  .brand-name { order: 2; }
+
   .hamburger {
     display: flex;
+    order: 3;
+    margin-left: auto;
   }
 
   .nav-links {
@@ -1229,8 +1235,33 @@ textarea.form-control {
     flex-direction: column;
   }
 
+  /* Acciones (idioma + botones) colapsan dentro del menú hamburguesa */
   .nav-actions {
-    order: 2;
+    display: none;
+    order: 5;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    padding: 0.75rem 1rem 0.25rem;
+  }
+
+  .navbar.menu-open .nav-actions {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .nav-actions .language-switcher {
+    justify-content: center;
+  }
+
+  .nav-actions a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-actions .btn {
+    width: 100%;
   }
 }
 
