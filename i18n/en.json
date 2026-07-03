@@ -5,6 +5,7 @@
         "home": "Home",
         "about": "About Us",
         "how": "How does it work?",
+        "videos": "Videos",
         "pricing": "Plans",
         "faq": "FAQs",
         "contact": "Contact"
@@ -53,9 +54,19 @@
             "description": "Manage your fleet's location, certificate the mineral's data and integrate our system to your preexisting infraestructure for an enhanced data security and management experience."
         }
     },
+    "videos": {
+        "title": "Get to Know Us",
+        "subtitle": "Watch our story and discover how GoldCheck brings trust to the gold chain.",
+        "team": {
+            "caption": "Meet the Team"
+        },
+        "product": {
+            "caption": "About the Product"
+        }
+    },
     "rights":{
         "content": "© 2026 GOLDCHECK. All rights reserved."
-    }, 
+    },
 
     "faq": {
     "title": "FAQs",

@@ -5,6 +5,7 @@
         "home": "Inicio",
         "about": "Quiénes somos",
         "how": "¿Cómo funciona?",
+        "videos": "Videos",
         "pricing": "Planes",
         "faq": "Preguntas frecuentes",
         "contact": "Contacto"
@@ -51,6 +52,16 @@
         "segment2": {
             "title": "Empresas y Joyerías",
             "description": "Gestiona la ubicación de tu flota, certifica los datos de los minerales e integra nuestro sistema en tu infraestructura actual para mejorar la seguridad de los datos y la gestión."
+        }
+    },
+    "videos": {
+        "title": "Conócenos",
+        "subtitle": "Mira nuestra historia y descubre cómo GoldCheck aporta confianza a la cadena del oro.",
+        "team": {
+            "caption": "Conoce al Equipo"
+        },
+        "product": {
+            "caption": "Sobre el Producto"
         }
     },
     "rights":{
