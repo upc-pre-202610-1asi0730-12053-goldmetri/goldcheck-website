@@ -35,6 +35,7 @@
         <li><a href="#home" data-i18n="headers.home">Home</a></li>
         <li><a href="#about" data-i18n="headers.about">About Us</a></li>
         <li><a href="#how" data-i18n="headers.how">How does it work?</a></li>
+        <li><a href="#videos" data-i18n="headers.videos">Videos</a></li>
         <li><a href="#pricing" data-i18n="headers.pricing">Plans</a></li>
         <li><a href="#faq" data-i18n="headers.faq">FAQs</a></li>
         <li><a href="#contact" data-i18n="headers.contact">Contact</a></li>
@@ -193,6 +194,28 @@
             <h4 data-i18n="howdoesitworkSection.segment2.title">Enterprises and Governmental entities</h4>
             <p data-i18n="howdoesitworkSection.segment2.description">Manage your fleet's location with a full approval system.</p>
         </div>
+    </div>
+</section>
+
+<!-- Videos Section -->
+<section class="section-padding video-section" id="videos">
+    <div class="section-header">
+        <h2 data-i18n="videos.title">Get to Know Us</h2>
+    </div>
+    <p class="video-intro" data-i18n="videos.subtitle">Watch our story and discover how GoldCheck brings trust to the gold chain.</p>
+    <div class="video-grid">
+        <figure class="video-card">
+            <div class="video-frame">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/kRmkPHiJUa8"
+                    title="GoldCheck – About the Team"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <figcaption class="video-caption" data-i18n="videos.team.caption">Meet the Team</figcaption>
+        </figure>
     </div>
 </section>
 
@@ -543,6 +566,7 @@
                 <li><a href="#home" data-i18n="headers.home">Home</a></li>
                 <li><a href="#about" data-i18n="headers.about">About Us</a></li>
                 <li><a href="#how" data-i18n="headers.how">How does it work?</a></li>
+                <li><a href="#videos" data-i18n="headers.videos">Videos</a></li>
                 <li><a href="#pricing" data-i18n="headers.pricing">Plans</a></li>
                 <li><a href="#faq" data-i18n="headers.faq">FAQs</a></li>
                 <li><a href="#contact" data-i18n="headers.contact">Contact</a></li>
@@ -775,7 +799,7 @@
     }
 
     function initScrollAnimations() {
-        const targets = document.querySelectorAll('.card, .mv-row, .faq-item, .section-header, .contact-form, .contact-image');
+        const targets = document.querySelectorAll('.card, .mv-row, .faq-item, .section-header, .contact-form, .contact-image, .video-card');
 
         // Stagger cards dentro de cada grid
         document.querySelectorAll('.cards-grid').forEach(grid => {
