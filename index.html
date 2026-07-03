@@ -798,34 +798,71 @@
         const feedback = document.getElementById('form-feedback');
         if (!saveBtn || !feedback) return;
 
+        const nameEl = document.getElementById('contact-name');
+        const phoneEl = document.getElementById('contact-phone');
+        const emailEl = document.getElementById('contact-email');
+        const messageEl = document.getElementById('contact-message');
+        const radios = document.querySelectorAll('input[name="user-type"]');
+        const radioGroup = document.querySelector('.radio-group');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        const getLang = () => localStorage.getItem('language') || 'en';
+
+        // Per-field, localized messages
+        const messages = {
+            name:         { es: 'Por favor ingresa tu nombre completo.', en: 'Please enter your full name.' },
+            phone:        { es: 'Por favor ingresa tu teléfono.', en: 'Please enter your phone number.' },
+            emailEmpty:   { es: 'Por favor ingresa tu correo.', en: 'Please enter your email.' },
+            emailInvalid: { es: 'Ingresa un correo electrónico válido.', en: 'Please enter a valid email address.' },
+            message:      { es: 'Por favor escribe tu mensaje.', en: 'Please write your message.' },
+            userType:     { es: 'Por favor selecciona un tipo de usuario.', en: 'Please select a user type.' },
+            success:      { es: '¡Gracias! Tu mensaje ha sido guardado correctamente.', en: 'Thank you! Your message has been saved successfully.' }
+        };
+
+        function clearError(el) {
+            el.classList.remove('input-error');
+            el.removeAttribute('aria-invalid');
+        }
+
+        function failField(el, message) {
+            el.classList.add('input-error');
+            el.setAttribute('aria-invalid', 'true');
+            showFeedback(feedback, 'error', message);
+            el.focus();
+        }
+
+        // Remove the error highlight as soon as the user fixes the field
+        [nameEl, phoneEl, emailEl, messageEl].forEach(el => {
+            el.addEventListener('input', () => clearError(el));
+        });
+        radios.forEach(r => {
+            r.addEventListener('change', () => radioGroup && radioGroup.classList.remove('input-error'));
+        });
+
         saveBtn.addEventListener('click', () => {
-            const name = document.getElementById('contact-name').value.trim();
-            const phone = document.getElementById('contact-phone').value.trim();
-            const email = document.getElementById('contact-email').value.trim();
+            const l = getLang();
+
+            // Validate one field at a time and stop at the first invalid one
+            if (!nameEl.value.trim())  { failField(nameEl, messages.name[l]); return; }
+            if (!phoneEl.value.trim()) { failField(phoneEl, messages.phone[l]); return; }
+            if (!emailEl.value.trim()) { failField(emailEl, messages.emailEmpty[l]); return; }
+            if (!emailRegex.test(emailEl.value.trim())) { failField(emailEl, messages.emailInvalid[l]); return; }
+            if (!messageEl.value.trim()) { failField(messageEl, messages.message[l]); return; }
+
             const selectedRadio = document.querySelector('input[name="user-type"]:checked');
-            const message = document.getElementById('contact-message').value.trim();
-
-            const lang = localStorage.getItem('language') || 'en';
-            const errorMsg = lang === 'es'
-                ? 'Por favor completa todos los campos requeridos.'
-                : 'Please fill in all required fields.';
-            const radioErrorMsg = lang === 'es'
-                ? 'Por favor selecciona un tipo de usuario.'
-                : 'Please select a user type.';
-            const successMsg = lang === 'es'
-                ? '¡Gracias! Tu mensaje ha sido guardado correctamente.'
-                : 'Thank you! Your message has been saved successfully.';
-
-            if (!name || !phone || !email || !message) {
-                showFeedback(feedback, 'error', errorMsg);
-                return;
-            }
             if (!selectedRadio) {
-                showFeedback(feedback, 'error', radioErrorMsg);
+                if (radioGroup) radioGroup.classList.add('input-error');
+                showFeedback(feedback, 'error', messages.userType[l]);
+                if (radios[0]) radios[0].focus();
                 return;
             }
 
+            const name = nameEl.value.trim();
+            const phone = phoneEl.value.trim();
+            const email = emailEl.value.trim();
+            const message = messageEl.value.trim();
             const userType = selectedRadio.value;
+
             const fileContent =
                 `GoldCheck Contact Form Submission\n` +
                 `-----------------------------------\n` +
@@ -845,13 +882,11 @@
             document.body.removeChild(tempAnchor);
             URL.revokeObjectURL(tempAnchor.href);
 
-            showFeedback(feedback, 'success', successMsg);
+            showFeedback(feedback, 'success', messages.success[l]);
 
-            document.getElementById('contact-name').value = '';
-            document.getElementById('contact-phone').value = '';
-            document.getElementById('contact-email').value = '';
-            document.getElementById('contact-message').value = '';
-            if (selectedRadio) selectedRadio.checked = false;
+            [nameEl, phoneEl, emailEl, messageEl].forEach(el => { el.value = ''; clearError(el); });
+            selectedRadio.checked = false;
+            if (radioGroup) radioGroup.classList.remove('input-error');
         });
     }
 
