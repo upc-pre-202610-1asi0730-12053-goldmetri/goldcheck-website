@@ -82,17 +82,18 @@ a monthly/annual billing toggle with a 20% discount.
 | Plan | Price | Main features |
 |---|---|---|
 | Bronze | $0 | 5 pieces/month · Basic dashboard · Email support |
-| Gold ⭐ | $49/mo | 50 pieces/month · Advanced analytics · QR certification · Priority support |
-| Platinum | $129/mo | Unlimited pieces · API access · Multi-company · SLA 99.9% · Dedicated manager |
+| Gold ⭐ | $53/mo | 50 pieces/month · Advanced analytics · QR certification · Priority support |
+| Platinum | $133/mo | Unlimited pieces · API access · Multi-company · SLA 99.9% · Dedicated manager |
 
 ### Mining Companies
 | Plan | Price | Main features |
 |---|---|---|
 | Bronze | $0 | 5 batches/month · Basic dashboard · Email support |
-| Gold ⭐ | $49/mo | 50 batches/month · Advanced analytics · Real-time IoT · Priority support |
-| Platinum | $129/mo | Unlimited batches · API access · Multi-company · SLA 99.9% · Dedicated manager |
+| Gold ⭐ | $53/mo | 50 batches/month · Advanced analytics · Real-time IoT · Priority support |
+| Platinum | $133/mo | Unlimited batches · API access · Multi-company · SLA 99.9% · Dedicated manager |
 
-> Annual pricing applies a 20% discount (Gold → $39/mo · Platinum → $103/mo).
+> Annual pricing applies a 20% discount (Gold → $42/mo · Platinum → $106/mo). Jewelry and Mining
+> prices match the web app's S/199 and S/499 monthly plans, converted to USD.
 
 ---
 
