@@ -84,6 +84,36 @@
             "role": "Final Consumer"
         }
     },
+    "legal": {
+        "terms": "Terms & Conditions",
+        "privacy": "Privacy Policy",
+        "termsTitle": "Terms & Conditions of Service",
+        "termsIntro": "Welcome to GoldCheck, a mineral traceability platform operated by GoldMetrics. By accessing or using our services you agree to be bound by these terms.",
+        "termsAcceptTitle": "1. Acceptance of Terms",
+        "termsAccept": "By creating an account or using any GoldCheck service, you confirm that you have read, understood and agree to these Terms & Conditions. If you do not agree, you must not use the platform.",
+        "termsUseTitle": "2. Permitted Use",
+        "termsUse": "GoldCheck is intended for lawful mineral traceability, certification verification and supply-chain transparency purposes. You agree not to misuse the platform, falsify traceability records or attempt to circumvent verification mechanisms.",
+        "termsDataTitle": "3. Data & Privacy",
+        "termsData": "We collect and process personal data in accordance with our Privacy Policy. Production and extraction data submitted by mining operators is treated as confidential and is only shared with authorized parties within the supply chain.",
+        "termsIpTitle": "4. Intellectual Property",
+        "termsIp": "All content, trademarks, logos and software on GoldCheck are the property of GoldMetrics. You may not reproduce, distribute or create derivative works without prior written consent.",
+        "termsLiabilityTitle": "5. Limitation of Liability",
+        "termsLiability": "GoldCheck provides traceability information on an \"as-is\" basis. GoldMetrics shall not be liable for indirect, incidental or consequential damages arising from the use of the platform.",
+        "termsEthicsTitle": "6. Professional Ethics",
+        "termsEthics": "GoldMetrics operates in accordance with the ACM/IEEE Software Engineering Code of Ethics and the CIP Code of Ethics, promoting transparency, honesty and responsibility in all aspects of the platform.",
+        "termsChangesTitle": "7. Changes to Terms",
+        "termsChanges": "We reserve the right to update these terms at any time. Continued use of the platform after changes constitutes acceptance of the revised terms.",
+        "privacyTitle": "Privacy Policy",
+        "privacyIntro": "GoldMetrics is committed to protecting your privacy. This policy explains how we collect, use and safeguard your personal information when you use the GoldCheck platform.",
+        "privacyCollectTitle": "1. Information We Collect",
+        "privacyCollect": "We collect information you provide directly (name, email, company details) and data generated through platform usage (traceability records, verification logs, analytics).",
+        "privacyUseTitle": "2. How We Use Your Information",
+        "privacyUse": "Your information is used to provide traceability services, generate certifications, improve platform functionality and communicate important updates. We do not sell your personal data to third parties.",
+        "privacySecurityTitle": "3. Data Security",
+        "privacySecurity": "We implement industry-standard security measures including encryption, access controls and regular audits to protect your data against unauthorized access, alteration or destruction.",
+        "privacyContactTitle": "4. Contact",
+        "privacyContact": "For questions about this Privacy Policy, contact us at privacy@goldmetrics.com."
+    },
     "rights":{
         "content": "© 2026 GOLDCHECK. All rights reserved."
     },
