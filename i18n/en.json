@@ -111,8 +111,15 @@
         "privacyUse": "Your information is used to provide traceability services, generate certifications, improve platform functionality and communicate important updates. We do not sell your personal data to third parties.",
         "privacySecurityTitle": "3. Data Security",
         "privacySecurity": "We implement industry-standard security measures including encryption, access controls and regular audits to protect your data against unauthorized access, alteration or destruction.",
-        "privacyContactTitle": "4. Contact",
-        "privacyContact": "For questions about this Privacy Policy, contact us at privacy@goldmetrics.com."
+        "privacyRightsTitle": "4. Your Rights",
+        "privacyRights": "You have the right to access, correct or delete your personal data at any time. You may also request a copy of the data we hold about you by contacting our support team.",
+        "privacyCookiesTitle": "5. Cookies & Tracking",
+        "privacyCookies": "GoldCheck uses essential cookies to maintain your session and language preferences. We do not use third-party tracking cookies for advertising purposes.",
+        "privacyContactTitle": "6. Contact",
+        "privacyContact": "For questions about this Privacy Policy, contact us at privacy@goldmetrics.com.",
+        "privacyUpdated": "Last updated: July 2026",
+        "termsUpdated": "Last updated: July 2026",
+        "backHome": "← Back to Home"
     },
     "rights":{
         "content": "© 2026 GOLDCHECK. All rights reserved."
